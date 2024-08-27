@@ -12,7 +12,8 @@ parts:
     chapters:
     - file: meta_stats
     - file: meta_pdp
-  # - caption: 넘파이
-  #   numbered: True
-  #   chapters:
-  #   - file: numpy_1
+  - caption: 승촌보
+    numbered: True
+    chapters:
+    - file: scb_seasonal_flow_chla
+    - file: scb_seasonal_flow_chla_GB
