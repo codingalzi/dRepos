@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+options:
+  numbered: True
+  # only_build_toc_files: true
+parts:
+  - caption: 메타 분석
+    numbered: True
+    chapters:
+    - file: meta_stats
+    - file: meta_pdp
+  # - caption: 넘파이
+  #   numbered: True
+  #   chapters:
+  #   - file: numpy_1
