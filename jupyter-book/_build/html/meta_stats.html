@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. 바이오차 활용 메타 데이터 &#8212; 데이터 리포지토리</title>
+    <title>1. 바이오차 메타 데이터: PDP 분석 &#8212; 데이터 리포지토리</title>
   
   
   
@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -61,8 +61,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'meta_stats';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="2. 바이오차 활용 메타 데이터" href="meta_pdp.html" />
-    <link rel="prev" title="데이터 분석 모음집" href="intro.html" />
+    <link rel="next" title="2. 바이오차 메타 데이터: 통계 분석" href="meta_pdp.html" />
+    <link rel="prev" title="메타 분석 자료 모음집" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,8 +168,8 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">메타 분석</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. 바이오차  활용 메타 데이터</a></li>
-<li class="toctree-l1"><a class="reference internal" href="meta_pdp.html">2. 바이오차  활용 메타 데이터</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. 바이오차 메타 데이터: PDP 분석</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meta_pdp.html">2. 바이오차 메타 데이터: 통계 분석</a></li>
 </ul>
 
     </div>
@@ -386,7 +386,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>바이오차  활용 메타 데이터</h1>
+    <h1>바이오차 메타 데이터: PDP 분석</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,27 +396,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.1. 최종 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.2. 세부 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.3. 주요 처리 기법</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.4. 필요한 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.5. 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1. 최종 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.2. 세부 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.3. 주요 처리 기법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.4. 필요한 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.5. 데이터 불러오기</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#field">1.5.1. Field 데이터</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.5.2. 데이터 특성 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.5.2. 데이터 특성 탐색</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6. 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.1. 특성명 변경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.6.2. 결측치 처리</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.6. 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6.1. 특성명 변경</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.2. 결측치 처리</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.7. 범주형 특성별 그룹화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.8. 수치형 특성 구간화</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.8.1. 수치형 특성 구간별 평균값</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.8.2. 수치형 특성 구간화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.7. 범주형 특성별 그룹화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.8. 수치형 특성 구간화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.8.1. 수치형 특성 구간별 평균값</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.8.2. 수치형 특성 구간화</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.9. 특성 조합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.9. 특성 조합</a></li>
 </ul>
             </nav>
         </div>
@@ -428,17 +428,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">1. </span>바이오차  활용 메타 데이터<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2><span class="section-number">1.1. </span>최종 목표<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="pdp">
+<h1><span class="section-number">1. </span>바이오차 메타 데이터: PDP 분석<a class="headerlink" href="#pdp" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2><span class="section-number">1.1. </span>최종 목표<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>바이오차의 밭 토양 온실가스 배출 저감, 토양 탄소 증진, 토양 환경 개선 효과를 정량적으로 평가</p></li>
 <li><p>바이오차 활용 및 보급을 위한 사업화 근거 마련</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2><span class="section-number">1.2. </span>세부 목표<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h2><span class="section-number">1.2. </span>세부 목표<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>밭에서 바이오차 활용시 아산화질소 배출 저감·탄소증진·토양환경 개선 효과 메타 분석</p></li>
 <li><p>밭에서 바이오차 효과 극대화를 위한 바이오차 및 영농 조건 제시</p></li>
@@ -447,8 +447,8 @@ document.write(`
 <li><p>밭에서 경축순환 바이오차 활용 사업화 모델 실증 자료 제공</p></li>
 </ul>
 </section>
-<section id="id4">
-<h2><span class="section-number">1.3. </span>주요 처리 기법<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h2><span class="section-number">1.3. </span>주요 처리 기법<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>범주형 특성 처리: <code class="docutils literal notranslate"><span class="pre">RR</span></code> 값에 따라 순차적으로 정수 인코딩 적용</p>
 <ul>
@@ -458,8 +458,8 @@ document.write(`
 <li><p>데이터 분포 확인: <code class="docutils literal notranslate"><span class="pre">groupby()</span></code> 메서드 활용</p></li>
 </ul>
 </section>
-<section id="id5">
-<h2><span class="section-number">1.4. </span>필요한 모듈 임포트<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h2><span class="section-number">1.4. </span>필요한 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># numpy와 pandas</span>
@@ -542,8 +542,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="id6">
-<h2><span class="section-number">1.5. </span>데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h2><span class="section-number">1.5. </span>데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p><strong>데이터 저장소</strong></p>
 <p>현재 디렉토리 안의 <code class="docutils literal notranslate"><span class="pre">data</span></code> 디렉토리에 데이터 엑셀 파일이 있다고 가정하고 진행한다.</p>
 <div class="cell docutils container">
@@ -1848,8 +1848,8 @@ memory usage: 59.8+ KB
 </div></div></div>
 </div>
 </section>
-<section id="id7">
-<h3><span class="section-number">1.5.2. </span>데이터 특성 탐색<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h3><span class="section-number">1.5.2. </span>데이터 특성 탐색<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">field</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -1884,10 +1884,10 @@ memory usage: 44.1+ KB
 </div>
 </section>
 </section>
+<section id="id7">
+<h2><span class="section-number">1.6. </span>전처리<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <section id="id8">
-<h2><span class="section-number">1.6. </span>전처리<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<section id="id9">
-<h3><span class="section-number">1.6.1. </span>특성명 변경<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.6.1. </span>특성명 변경<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>0 레벨 컬럼 삭제</p></li>
 </ul>
@@ -1993,8 +1993,8 @@ memory usage: 44.1+ KB
 </div>
 </div>
 </section>
-<section id="id10">
-<h3><span class="section-number">1.6.2. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3><span class="section-number">1.6.2. </span>결측치 처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>결측치 그대로 두고 진행함.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2031,8 +2031,8 @@ memory usage: 44.1+ KB
 </div>
 </section>
 </section>
-<section id="id11">
-<h2><span class="section-number">1.7. </span>범주형 특성별 그룹화<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id10">
+<h2><span class="section-number">1.7. </span>범주형 특성별 그룹화<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cat_features</span> <span class="o">=</span> <span class="n">core_field</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span>
@@ -2391,8 +2391,8 @@ memory usage: 44.1+ KB
 </div>
 </div>
 </section>
-<section id="id12">
-<h2><span class="section-number">1.8. </span>수치형 특성 구간화<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h2><span class="section-number">1.8. </span>수치형 특성 구간화<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
 <p>모든 수치형 특성에 대해 구간화를 적용하여 범주형 특성으로 변환한다.</p>
 <p><strong>수치형 특성 확인</strong></p>
 <div class="cell docutils container">
@@ -2780,8 +2780,8 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
 </div>
 </div>
 </div>
-<section id="id13">
-<h3><span class="section-number">1.8.1. </span>수치형 특성 구간별 평균값<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3><span class="section-number">1.8.1. </span>수치형 특성 구간별 평균값<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
@@ -2805,8 +2805,8 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
 </div>
 </div>
 </section>
-<section id="id14">
-<h3><span class="section-number">1.8.2. </span>수치형 특성 구간화<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3><span class="section-number">1.8.2. </span>수치형 특성 구간화<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">core_field_q</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -3054,8 +3054,8 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
 </div>
 </section>
 </section>
-<section id="id15">
-<h2><span class="section-number">1.9. </span>특성 조합<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<section id="id14">
+<h2><span class="section-number">1.9. </span>특성 조합<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>예제: ‘Fertilizer’<code class="docutils literal notranslate"><span class="pre">와</span> </code>‘Feedstock’`</p></li>
 </ul>
@@ -3572,7 +3572,7 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">데이터 분석 모음집</p>
+        <p class="prev-next-title">메타 분석 자료 모음집</p>
       </div>
     </a>
     <a class="right-next"
@@ -3580,7 +3580,7 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>바이오차  활용 메타 데이터</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>바이오차 메타 데이터: 통계 분석</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -3600,27 +3600,27 @@ Categories (4, object): [&#39;q1&#39; &lt; &#39;q2&#39; &lt; &#39;q3&#39; &lt; &
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.1. 최종 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.2. 세부 목표</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.3. 주요 처리 기법</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.4. 필요한 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.5. 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.1. 최종 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.2. 세부 목표</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.3. 주요 처리 기법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.4. 필요한 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.5. 데이터 불러오기</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#field">1.5.1. Field 데이터</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.5.2. 데이터 특성 탐색</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.5.2. 데이터 특성 탐색</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6. 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.1. 특성명 변경</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.6.2. 결측치 처리</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.6. 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6.1. 특성명 변경</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.2. 결측치 처리</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.7. 범주형 특성별 그룹화</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.8. 수치형 특성 구간화</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.8.1. 수치형 특성 구간별 평균값</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.8.2. 수치형 특성 구간화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.7. 범주형 특성별 그룹화</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.8. 수치형 특성 구간화</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.8.1. 수치형 특성 구간별 평균값</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.8.2. 수치형 특성 구간화</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.9. 특성 조합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.9. 특성 조합</a></li>
 </ul>
   </nav></div>
 
