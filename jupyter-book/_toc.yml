@@ -17,3 +17,8 @@ parts:
     chapters:
     - file: scb_seasonal_flow_chla
     - file: scb_seasonal_flow_chla_GB
+  - caption: 죽산보
+    numbered: True
+    chapters:
+    - file: jsb_basics_240830
+    
