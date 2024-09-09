@@ -5745,7 +5745,7 @@ memory usage: 453.1 KB
 <p>다음 특성들을 대상으로 죽산보와 시프트된 승촌보 데이터 사이의 상관관계를 알아본다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">common_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EC&#39;</span><span class="p">,</span> <span class="s1">&#39;TN&#39;</span><span class="p">,</span> <span class="s1">&#39;DO&#39;</span><span class="p">,</span> <span class="s1">&#39;TOC&#39;</span><span class="p">,</span> <span class="s1">&#39;CHLA&#39;</span><span class="p">,</span> <span class="s1">&#39;pH&#39;</span><span class="p">,</span> <span class="s1">&#39;TP&#39;</span><span class="p">,</span> <span class="s1">&#39;Inflow&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">common_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EC&#39;</span><span class="p">,</span> <span class="s1">&#39;TN&#39;</span><span class="p">,</span> <span class="s1">&#39;DO&#39;</span><span class="p">,</span> <span class="s1">&#39;TOC&#39;</span><span class="p">,</span> <span class="s1">&#39;CHLA&#39;</span><span class="p">,</span> <span class="s1">&#39;pH&#39;</span><span class="p">,</span> <span class="s1">&#39;TP&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">,</span> <span class="s1">&#39;Water_TA&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5804,7 +5804,7 @@ memory usage: 453.1 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/638229564c02e99fd161b65c0f348a7112e48c3d95717c83e7dafd308a117667.png" src="_images/638229564c02e99fd161b65c0f348a7112e48c3d95717c83e7dafd308a117667.png" />
+<img alt="_images/e47765c417baebe90e2507b22cfb293d3e54562d702c83451bd102f3dbbdd8a9.png" src="_images/e47765c417baebe90e2507b22cfb293d3e54562d702c83451bd102f3dbbdd8a9.png" />
 </div>
 </div>
 </section>
@@ -5865,12 +5865,12 @@ memory usage: 453.1 KB
 <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2013</span><span class="p">,</span> <span class="mi">2024</span><span class="p">):</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="n">year</span><span class="o">-</span><span class="mi">2013</span><span class="p">]</span>
     <span class="p">(</span><span class="n">shift_dict</span><span class="p">[</span><span class="n">year</span><span class="p">]</span><span class="o">.</span><span class="n">T</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Shifted correlation with CHPL of JSB (</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5234147076e53a078b29595acdcdc28109f8a027b75c0b46a59822d8c8db27b4.png" src="_images/5234147076e53a078b29595acdcdc28109f8a027b75c0b46a59822d8c8db27b4.png" />
+<img alt="_images/e76d2f056243e526fb0b1b44ee4a2dd5859f75005692db571e8a74ec51a38711.png" src="_images/e76d2f056243e526fb0b1b44ee4a2dd5859f75005692db571e8a74ec51a38711.png" />
 </div>
 </div>
 </section>
