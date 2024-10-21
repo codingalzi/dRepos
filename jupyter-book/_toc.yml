@@ -27,4 +27,6 @@ parts:
     - file: jsb_scb_compared_240908
     - file: jsb_scb_compared_240919
     - file: jsb_scb_compared_240925
+    - file: jsb_scb_compared_240925a
+    - file: jsb_scb_jsc_added_241010
   
