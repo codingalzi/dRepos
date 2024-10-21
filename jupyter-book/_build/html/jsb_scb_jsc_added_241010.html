@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>13. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용 &#8212; 데이터 리포지토리</title>
+    <title>12. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용 &#8212; 데이터 리포지토리</title>
   
   
   
@@ -61,7 +61,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'jsb_scb_jsc_added_241010';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="12. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240925a.html" />
+    <link rel="prev" title="11. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240925.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,9 +183,8 @@
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240904a.html">8. 죽산보-승촌보 데이터 비교: 모델 훈련 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240908.html">9. 죽산보-승촌보 데이터 비교: 상관관계</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240919.html">10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925.html">11. 죽산보 데이터 분석: 승촌보 모든 특성 윈도우 적용 활용</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925a.html">12. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925.html">11. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
 </ul>
 
     </div>
@@ -412,36 +411,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">13.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">13.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">13.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">13.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">12.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">12.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">12.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">12.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">12.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">12.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">12.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">13.6. 지석천 데이터 불러오기</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">13.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">13.7.1. Chl-a 분포 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">13.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">13.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">13.7.4. 방류량, 유량, 유입량 분포</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">13.8. 모델 훈련</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">13.8.1. 전처리: 로그 변환</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">13.8.2. 그레이디언트 부스팅 모델</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">13.8.3. 특성 중요도</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#do-ph">13.8.4. 전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">13.8.5. 죽산보에 승촌보/지석천 특성 추가 후 훈련</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">12.6. 지석천 데이터 불러오기</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">12.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">12.7.1. Chl-a 분포 비교</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">12.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">12.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">12.7.4. 방류량, 유량, 유입량 분포</a></li>
 </ul>
 </li>
 </ul>
@@ -456,16 +447,16 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">13. </span>죽산보 데이터 분석: 승촌보와 지석천 데이터 활용<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">12. </span>죽산보 데이터 분석: 승촌보와 지석천 데이터 활용<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2><span class="section-number">13.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보와 승촌보 데이터의 기초 통계 비교</p></li>
 <li><p>승촌보와 죽산보 사이에 위치한 지석천 수질, 수량 데이터를 활용하여 죽산보 데이터 분석</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2><span class="section-number">13.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보/승촌보 수질 데이터</p>
 <ul>
@@ -494,7 +485,7 @@ document.write(`
 </ul>
 </section>
 <section id="id4">
-<h2><span class="section-number">13.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -547,7 +538,7 @@ document.write(`
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">13.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p><strong>디렉토리 관리 객체</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -578,7 +569,7 @@ document.write(`
 </div>
 </div>
 <section id="id6">
-<h3><span class="section-number">13.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p><strong>데이터 연도</strong></p>
 <ul class="simple">
 <li><p>2012년부터 2023년도 사이의 데이터</p></li>
@@ -2316,7 +2307,7 @@ memory usage: 13.4+ MB
 </div>
 </section>
 <section id="id7">
-<h3><span class="section-number">13.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>죽산보/승촌보 수량 데이터는 <code class="docutils literal notranslate"><span class="pre">'yeongsanriver_weir_dflow'</span></code> 디렉토리에 있음.</p></li>
 <li><p>연도별 데이터는 시트(sheet)로 구분됨.</p></li>
@@ -3843,7 +3834,7 @@ memory usage: 26.9 MB
 </div>
 </section>
 <section id="id8">
-<h3><span class="section-number">13.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p><strong>10분 단위를 1시간 단위로 변경</strong></p>
 <p>먼저 시간별 평균값을 활용하여 1시간 단위 데이터로 변환한다.</p>
 <div class="cell docutils container">
@@ -4274,9 +4265,9 @@ memory usage: 18.4+ MB
 </section>
 </section>
 <section id="id9">
-<h2><span class="section-number">13.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
 <section id="id10">
-<h3><span class="section-number">13.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>일조, 일사, 강수량 세 특성에 다량의 결측치가 포함된다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4660,7 +4651,7 @@ memory usage: 18.4+ MB
 </div>
 </section>
 <section id="id11">
-<h3><span class="section-number">13.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>수치형 특성들의 분포를 살펴보았을 때 이상치 등은 없어 보인다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5145,7 +5136,7 @@ memory usage: 18.4+ MB
 </div>
 </section>
 <section id="id12">
-<h3><span class="section-number">13.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>먼저 지점, 지점명 정보는 중요하지 않기에 해당 특성들을 삭제한다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5396,7 +5387,7 @@ memory usage: 17.0 MB
 </div>
 </section>
 <section id="id13">
-<h3><span class="section-number">13.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>결측치는 양방향 12시간 선형 보간법으로 대체. 결측 구간별 최대 24시간의 결측치 대체.</p></li>
 <li><p>예) 결측치가 36개인 구간이 있다면 처음-12개와 25-36개만 결측치 대체.</p></li>
@@ -5583,7 +5574,7 @@ memory usage: 10.2 MB
 </section>
 </section>
 <section id="id14">
-<h2><span class="section-number">13.6. </span>지석천 데이터 불러오기<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.6. </span>지석천 데이터 불러오기<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_directory</span> <span class="o">=</span> <span class="n">base_path</span> <span class="o">/</span> <span class="s2">&quot;jiseokcheon&quot;</span>
@@ -6461,9 +6452,9 @@ memory usage: 5.0 MB
 </div>
 </section>
 <section id="chla">
-<h2><span class="section-number">13.7. </span>승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교<a class="headerlink" href="#chla" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.7. </span>승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교<a class="headerlink" href="#chla" title="Link to this heading">#</a></h2>
 <section id="chl-a">
-<h3><span class="section-number">13.7.1. </span>Chl-a 분포 비교<a class="headerlink" href="#chl-a" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.7.1. </span>Chl-a 분포 비교<a class="headerlink" href="#chl-a" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Chl-a 분포</p></li>
 </ul>
@@ -6482,7 +6473,7 @@ memory usage: 5.0 MB
 </div>
 </section>
 <section id="id15">
-<h3><span class="section-number">13.7.2. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.7.2. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <p><strong>경우: 죽산보</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6527,7 +6518,7 @@ memory usage: 5.0 MB
 </div>
 </section>
 <section id="chl-a-chl-a">
-<h3><span class="section-number">13.7.3. </span>죽산보 Chl-a와 승촌보 Chl-a와의 상관관계<a class="headerlink" href="#chl-a-chl-a" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.7.3. </span>죽산보 Chl-a와 승촌보 Chl-a와의 상관관계<a class="headerlink" href="#chl-a-chl-a" title="Link to this heading">#</a></h3>
 <p>죽산보의 Chl-a와 죽산보, 지석천의 Chl-a와의 상관관계</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6643,7 +6634,7 @@ Name: jsb_chla, dtype: float64
 </div>
 </section>
 <section id="id16">
-<h3><span class="section-number">13.7.4. </span>방류량, 유량, 유입량 분포<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">12.7.4. </span>방류량, 유량, 유입량 분포<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">scb_df</span><span class="p">[</span><span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> <span class="n">jsc_df</span><span class="p">[</span><span class="s1">&#39;Flow&#39;</span><span class="p">],</span> <span class="n">jsb_df</span><span class="p">[</span><span class="s1">&#39;Inflow&#39;</span><span class="p">],</span> <span class="n">jsb_df</span><span class="p">[</span><span class="s1">&#39;Discharge&#39;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -6866,598 +6857,6 @@ Name: jsb_chla, dtype: float64
 </div>
 </section>
 </section>
-<section id="id17">
-<h2><span class="section-number">13.8. </span>모델 훈련<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
-<section id="id18">
-<h3><span class="section-number">13.8.1. </span>전처리: 로그 변환<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<p><strong><code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 특성 로그 변환</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">jsb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]]))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;Count&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/e784b4366af8c3aaf82aea2efd3a933e5b9ff2e90c021159edb5dd224e5979a9.png" src="_images/e784b4366af8c3aaf82aea2efd3a933e5b9ff2e90c021159edb5dd224e5979a9.png" />
-</div>
-</div>
-<p><strong>죽산보/승촌보/지석천 데이터의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 특성 로그 변환</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsb_df_log</span> <span class="o">=</span> <span class="n">jsb_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">jsb_df_log</span><span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">jsb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]])</span>
-<span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scb_df_log</span> <span class="o">=</span> <span class="n">scb_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">scb_df_log</span><span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">scb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]])</span>
-<span class="n">scb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_df_log</span> <span class="o">=</span> <span class="n">jsc_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">jsc_df_log</span><span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">jsc_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]])</span>
-<span class="n">jsc_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id19">
-<h3><span class="section-number">13.8.2. </span>그레이디언트 부스팅 모델<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gb_reg</span> <span class="o">=</span> <span class="n">GradientBoostingRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>우선 작동여부를 확인하기 위해 하나의 파라미터 조합만 사용</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;subsample&quot;</span><span class="p">:[</span><span class="mf">0.6</span><span class="p">],</span>
-    <span class="s1">&#39;max_depth&#39;</span><span class="p">:[</span><span class="mi">10</span><span class="p">],</span> 
-    <span class="s2">&quot;learning_rate&quot;</span><span class="p">:[</span><span class="mf">0.05</span><span class="p">],</span>
-    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:[</span><span class="mi">1200</span><span class="p">]</span>
-    <span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong><code class="docutils literal notranslate"><span class="pre">gridsearch()</span></code> 함수</strong></p>
-<ul class="simple">
-<li><p>그리드 탐색 훈련을 진행</p></li>
-<li><p>인자: 모델, 하이퍼파라미터 조합, 특성, 윈도우 크기, 년도</p>
-<ul>
-<li><p>년도: <code class="docutils literal notranslate"><span class="pre">None</span></code>이면 전체 데이터셋을 훈련셋으로 지정</p></li>
-</ul>
-</li>
-<li><p>지정된 특성의 지정된 크기만큼의 윈도우 기간 동안의 평균값을 새로운 특성으로 추가한 후에 훈련 시작</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gridsearch</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> 
-               <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span>
-               <span class="n">windows</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> 
-               <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
-               <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-               <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
-
-    <span class="c1"># best models</span>
-    <span class="n">best_model_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># best models names</span>
-    <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># test r2 scores of the best models</span>
-    <span class="n">test_score_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># test rmse scores of the best models</span>
-    <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># train features of the best models</span>
-    <span class="n">input_features_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># best hyperparameters for each window</span>
-    <span class="n">best_params_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    
-    <span class="k">for</span> <span class="n">window</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
-        <span class="c1"># window 특성 추가</span>
-        <span class="n">df_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
-        <span class="c1"># 결측치 제거</span>
-        <span class="n">df_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-        <span class="c1"># 입력 및 타깃 특성 지정</span>
-        <span class="n">features_to_be_removed</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="c1"># + features    # features에 포함된 특성 그대로 유지</span>
-        <span class="n">features_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_window</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">features_to_be_removed</span><span class="p">:</span>
-            <span class="n">features_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ft</span><span class="p">)</span>
-        
-        <span class="n">input_features</span> <span class="o">=</span> <span class="n">features_</span>
-        <span class="n">target_feature</span> <span class="o">=</span> <span class="s1">&#39;log_CHLA&#39;</span>
-
-        <span class="c1"># 입력 및 타깃 데이터셋 지정</span>
-        <span class="n">inputs</span> <span class="o">=</span> <span class="n">df_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">input_features</span><span class="p">]</span>
-        <span class="n">targets</span> <span class="o">=</span> <span class="n">df_window</span><span class="p">[</span><span class="n">target_feature</span><span class="p">]</span>
-
-        <span class="c1"># 훈련셋과 테스트셋 분리</span>
-        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-        <span class="c1"># 그리드 탐색 훈련 시작</span>
-        <span class="n">added_feature</span> <span class="o">=</span> <span class="n">window</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;===</span><span class="si">{</span><span class="n">added_feature</span><span class="si">}</span><span class="s2">day(s) temperature and discharge added===&quot;</span><span class="p">)</span>
-
-        <span class="n">model_grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> 
-                                  <span class="n">scoring</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;r2&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="s1">&#39;r2&#39;</span><span class="p">)</span>
-        <span class="n">model_grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-        <span class="c1"># 최적 모델 저장</span>
-        <span class="n">estimator</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_estimator_</span>
-
-        <span class="n">best_model</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">added_feature</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;days&quot;</span><span class="o">+</span><span class="s2">&quot;.pkl&quot;</span>
-        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
-
-        <span class="c1"># 저장된 모델 다시 불러오기</span>
-        <span class="n">estimator</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
-
-        <span class="n">best_model_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span>
-        <span class="n">best_model_name_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">best_model</span>
-        <span class="n">test_score_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-        <span class="n">test_score_rmse_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
-        <span class="n">input_features_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_features</span>
-        <span class="n">best_params_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_params_</span>
-
-    <span class="n">dicts</span> <span class="o">=</span> <span class="p">(</span><span class="n">best_model_dict</span><span class="p">,</span> 
-             <span class="n">best_model_name_dict</span><span class="p">,</span> 
-             <span class="n">test_score_dict</span><span class="p">,</span> 
-             <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
-             <span class="n">input_features_dict</span><span class="p">,</span> 
-             <span class="n">best_params_dict</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">dicts</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong><code class="docutils literal notranslate"><span class="pre">gridsearch_duet()</span></code> 함수</strong></p>
-<ul class="simple">
-<li><p>그리드 탐색 훈련을 진행</p></li>
-<li><p>인자: 모델, 하이퍼파라미터 조합, 특성, 윈도우 크기, 년도</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">df1</span></code>에 <code class="docutils literal notranslate"><span class="pre">df2</span></code>의 특성에 대해 윈도우를 적용한 결과를 추가해서 훈련셋으로 지정.</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">df1</span></code>: 죽산보 데이터</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">df2</span></code>: 승촌보 데이터</p></li>
-</ul>
-</li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gridsearch_duet</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> 
-                    <span class="n">features1</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> 
-                    <span class="n">features2</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> 
-                    <span class="n">original</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                    <span class="n">windows</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> 
-                    <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
-                    <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                    <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    df1: 죽산보 데이터</span>
-<span class="sd">    df2: 승촌보, 지석천 데이터</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="c1"># best models</span>
-    <span class="n">best_model_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># best models names</span>
-    <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># test r2 scores of the best models</span>
-    <span class="n">test_score_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># test rmse scores of the best models</span>
-    <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># train features of the best models</span>
-    <span class="n">input_features_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="c1"># best hyperparameters for each window</span>
-    <span class="n">best_params_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    
-    <span class="k">for</span> <span class="n">window</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
-        <span class="c1"># window 특성 추가</span>
-        <span class="n">df1_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> 
-                                       <span class="n">features</span><span class="o">=</span><span class="n">features1</span><span class="p">,</span>
-                                       <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span>
-                                       <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
-        <span class="n">df2_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> 
-                                       <span class="n">features</span><span class="o">=</span><span class="n">features2</span><span class="p">,</span> 
-                                       <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> 
-                                    <span class="c1">#    suffix=&#39;_win&#39;, </span>
-                                       <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
-        
-        <span class="c1"># 결측치 제거</span>
-        <span class="n">df1_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">df2_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        
-        <span class="c1"># 공통 인덱스 샘플만 활용</span>
-        <span class="n">df1_index</span> <span class="o">=</span> <span class="n">df1_window</span><span class="o">.</span><span class="n">index</span>
-        <span class="n">df2_index</span> <span class="o">=</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">index</span>
-        <span class="n">common_index</span> <span class="o">=</span> <span class="n">df1_index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">df2_index</span><span class="p">)</span>
-        
-        <span class="n">df1_window</span> <span class="o">=</span> <span class="n">df1_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
-        <span class="n">df2_window</span> <span class="o">=</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
-        
-        <span class="k">assert</span> <span class="p">(</span><span class="n">df1_window</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-                
-        <span class="c1"># 입력 및 타깃 특성 지정</span>
-
-        <span class="k">if</span> <span class="n">original</span><span class="p">:</span>
-            <span class="n">features1_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df1_window</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]))</span>
-            <span class="n">features2_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df2_window</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">features_to_be_removed</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features1</span>
-            <span class="n">features1_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df1_window</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">features_to_be_removed</span><span class="p">))</span>
-            <span class="n">features2_</span> <span class="o">=</span> <span class="p">[</span><span class="n">ft</span> <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="s1">&#39;d_&#39;</span> <span class="ow">in</span> <span class="n">ft</span><span class="p">]</span>
-            
-        <span class="n">target_feature</span> <span class="o">=</span> <span class="s1">&#39;log_CHLA&#39;</span>
-                
-        <span class="n">inputs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">features1_</span><span class="p">],</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">features2_</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">targets</span> <span class="o">=</span> <span class="n">df1_window</span><span class="p">[</span><span class="n">target_feature</span><span class="p">]</span>
-
-        <span class="c1"># 훈련셋과 테스트셋 분리</span>
-        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-        <span class="c1"># 그리드 탐색 훈련 시작</span>
-        <span class="n">added_feature</span> <span class="o">=</span> <span class="n">window</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;===</span><span class="si">{</span><span class="n">added_feature</span><span class="si">}</span><span class="s2">day(s) temperature and discharge added===&quot;</span><span class="p">)</span>
-
-        <span class="n">model_grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> 
-                                  <span class="n">scoring</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;r2&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="s1">&#39;r2&#39;</span><span class="p">)</span>
-        <span class="n">model_grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-        <span class="c1"># 최적 모델 저장</span>
-        <span class="n">estimator</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_estimator_</span>
-
-        <span class="n">best_model</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">added_feature</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;days&quot;</span><span class="o">+</span><span class="s2">&quot;.pkl&quot;</span>
-        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
-
-        <span class="c1"># 저장된 모델 다시 불러오기</span>
-        <span class="n">estimator</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
-
-        <span class="n">best_model_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span>
-        <span class="n">best_model_name_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">best_model</span>
-        <span class="n">test_score_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-        <span class="n">test_score_rmse_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
-        <span class="n">input_features_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">features1_</span> <span class="o">+</span> <span class="n">features2_</span>
-        <span class="n">best_params_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_params_</span>
-        
-    <span class="n">dicts</span> <span class="o">=</span> <span class="p">(</span><span class="n">best_model_dict</span><span class="p">,</span> 
-             <span class="n">best_model_name_dict</span><span class="p">,</span> 
-             <span class="n">test_score_dict</span><span class="p">,</span> 
-             <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
-             <span class="n">input_features_dict</span><span class="p">,</span> 
-             <span class="n">best_params_dict</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">dicts</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id20">
-<h3><span class="section-number">13.8.3. </span>특성 중요도<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>훈련된 최고 성능의 모델 활용</p></li>
-<li><p>특성 중요도를 막대그래프로 그리기</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
-                               <span class="n">input_features_dict</span><span class="p">,</span> 
-                               <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                               <span class="n">max_features</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="n">models_trained</span> <span class="o">=</span> <span class="n">best_model_name_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-    <span class="n">num_of_models</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">models_trained</span><span class="p">)</span>
-
-    <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">num_of_models</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">num_of_models</span><span class="o">*</span><span class="mi">4</span><span class="p">))</span>
-
-    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">model_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models_trained</span><span class="p">):</span>
-        <span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
-        <span class="c1"># 저장된 모델 다시 불러오기</span>
-        <span class="n">best_model</span> <span class="o">=</span> <span class="n">model_name</span><span class="o">+</span><span class="s2">&quot;days.pkl&quot;</span>
-        <span class="n">estimator_</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
-        <span class="c1"># 모델이 사용한 특성들 확인</span>
-        <span class="n">input_features_</span> <span class="o">=</span> <span class="n">input_features_dict</span><span class="p">[</span><span class="n">model_name</span><span class="p">]</span>
-        <span class="c1"># 특성 중요도 확인</span>
-        <span class="n">feature_series</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">estimator_</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="n">input_features_</span><span class="p">)</span>
-        <span class="n">feature_series</span> <span class="o">=</span> <span class="n">feature_series</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-        <span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Features&quot;</span>
-        <span class="n">feature_series</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Feature Importances&quot;</span>
-        
-        <span class="c1"># 특성 중요도 막대그래프</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">max_features</span><span class="p">:</span>
-            <span class="n">max_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">feature_series</span><span class="p">)</span>
-        <span class="c1"># colors = {h:&#39;gray&#39; for h in feature_series.index[:max_features]}</span>
-        <span class="c1"># colors[&#39;DO&#39;] = &#39;red&#39;</span>
-
-        <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
-                    <span class="n">x</span> <span class="o">=</span> <span class="n">feature_series</span><span class="p">[:</span><span class="n">max_features</span><span class="p">],</span> 
-                    <span class="n">y</span> <span class="o">=</span> <span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="n">max_features</span><span class="p">],</span> 
-                    <span class="c1"># palette=colors, </span>
-                    <span class="n">hue</span><span class="o">=</span><span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="n">max_features</span><span class="p">])</span>
-        <span class="c1"># sns.barplot(ax=ax, </span>
-        <span class="c1">#             x = feature_series[:max_features], </span>
-        <span class="c1">#             y = feature_series.index[:max_features])</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
-
-    <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="do-ph">
-<h3><span class="section-number">13.8.4. </span>전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제<a class="headerlink" href="#do-ph" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code>는 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>의 영향을 받는 인자임</p></li>
-<li><p>대기온도, 구름, 풍속 등은 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 특별한 인과관계가 없는 인자임.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">to_drop</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DO&#39;</span><span class="p">,</span> <span class="s1">&#39;pH&#39;</span><span class="p">,</span> <span class="s1">&#39;Air_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;RN&#39;</span><span class="p">,</span> <span class="s1">&#39;WS&#39;</span><span class="p">,</span> <span class="s1">&#39;SS&#39;</span><span class="p">,</span> <span class="s1">&#39;SI&#39;</span><span class="p">,</span> <span class="s1">&#39;CA_TOT&#39;</span><span class="p">,</span> <span class="s1">&#39;CA_MID&#39;</span><span class="p">,</span> <span class="s1">&#39;Down_WL&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>승촌보/죽산보 특성 일부 삭제</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1_jsb</span> <span class="o">=</span> <span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">to_drop</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df2_scb</span> <span class="o">=</span> <span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">to_drop</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>지석천 특성 일부 삭제</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df3_jsc</span> <span class="o">=</span> <span class="n">jsc_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">jsc_df_log</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">to_drop</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id21">
-<h3><span class="section-number">13.8.5. </span>죽산보에 승촌보/지석천 특성 추가 후 훈련<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
-<p><strong>학습된 모델 저장</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_models_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;best_models_with_scb_and_jsc&quot;</span>
-<span class="n">best_models_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>입력값</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">df1_jsb</span>
-<span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df2_scb</span><span class="o">.</span><span class="n">add_suffix</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;_scb&#39;</span><span class="p">),</span> <span class="n">df3_jsc</span><span class="o">.</span><span class="n">add_suffix</span><span class="p">(</span><span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;_jsc&#39;</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="mi">2021</span>
-<span class="n">window_features1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-<span class="n">window_features2</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-<span class="n">windows</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>모델 훈련</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dicts</span> <span class="o">=</span> <span class="n">gridsearch_duet</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">gb_reg</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> 
-                        <span class="n">features1</span><span class="o">=</span><span class="n">window_features1</span><span class="p">,</span> 
-                        <span class="n">features2</span><span class="o">=</span><span class="n">window_features2</span><span class="p">,</span> 
-                        <span class="n">original</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                        <span class="n">windows</span><span class="o">=</span><span class="n">windows</span><span class="p">,</span> 
-                        <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
-                        <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
-                        <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">best_model_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===1day(s) temperature and discharge added===
-Fitting 3 folds for each of 1 candidates, totalling 3 fits
-[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.011) r2: (test=0.973) total time=  25.7s
-[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.010) r2: (test=0.976) total time=  25.7s
-[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.011) r2: (test=0.974) total time=  25.6s
-===2day(s) temperature and discharge added===
-Fitting 3 folds for each of 1 candidates, totalling 3 fits
-[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.011) r2: (test=0.974) total time=  26.1s
-[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.009) r2: (test=0.979) total time=  25.9s
-[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.010) r2: (test=0.977) total time=  26.4s
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dicts</span> <span class="o">=</span> <span class="n">gridsearch_duet</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">gb_reg</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> 
-                        <span class="n">features1</span><span class="o">=</span><span class="n">window_features1</span><span class="p">,</span> 
-                        <span class="n">features2</span><span class="o">=</span><span class="n">window_features2</span><span class="p">,</span> 
-                        <span class="n">original</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                        <span class="n">windows</span><span class="o">=</span><span class="n">windows</span><span class="p">,</span> 
-                        <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
-                        <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
-                        <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">best_model_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===1day(s) temperature and discharge added===
-Fitting 3 folds for each of 1 candidates, totalling 3 fits
-[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  42.7s
-[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  42.5s
-[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  42.7s
-===2day(s) temperature and discharge added===
-Fitting 3 folds for each of 1 candidates, totalling 3 fits
-[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  43.4s
-[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  43.5s
-[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.000) r2: (test=1.000) total time=  43.3s
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>훈련된 최고 모델의 정보 저장</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-
-<span class="k">def</span> <span class="nf">save_best</span><span class="p">(</span><span class="n">path_to_save</span><span class="p">,</span> 
-              <span class="n">best_model_name_dict</span><span class="p">,</span> 
-              <span class="n">test_score_dict</span><span class="p">,</span> 
-              <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
-              <span class="n">best_params_dict</span><span class="p">,</span> 
-              <span class="n">input_features_dict</span><span class="p">):</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_model_name.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">test_score_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score_rmse.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">test_score_rmse_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_params.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_params_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;input_features.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">input_features_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>최고 성능 모델 정보 불러오기</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-
-<span class="k">def</span> <span class="nf">load_best</span><span class="p">(</span><span class="n">path_to_save</span><span class="p">):</span>
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_model_name.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score_rmse.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_params.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
-
-    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;input_features.json&#39;</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">best_model_name_dict</span><span class="p">,</span> <span class="n">test_score_dict</span><span class="p">,</span> <span class="n">test_score_rmse_dict</span><span class="p">,</span> <span class="n">best_params_dict</span><span class="p">,</span> <span class="n">input_features_dict</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">save_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">,</span> 
-          <span class="n">best_model_name_dict</span><span class="p">,</span>
-          <span class="n">test_score_dict</span><span class="p">,</span> 
-          <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
-          <span class="n">best_params_dict</span><span class="p">,</span> 
-          <span class="n">input_features_dict</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>최고 성능 모델 정보 불러오기</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
-
-<span class="n">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
-                           <span class="n">input_features_dict</span><span class="p">,</span>
-                           <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
-                           <span class="n">max_features</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 2000x10000 with 0 Axes&gt;
-</pre></div>
-</div>
-<img alt="_images/ad101551f934311ef141432ddb51cd12f6dd0e999b0370d61e557b550801ebd9.png" src="_images/ad101551f934311ef141432ddb51cd12f6dd0e999b0370d61e557b550801ebd9.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
-
-<span class="n">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
-                           <span class="n">input_features_dict</span><span class="p">,</span>
-                           <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
-                           <span class="n">max_features</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 2000x10000 with 0 Axes&gt;
-</pre></div>
-</div>
-<img alt="_images/849e05c1d057b56559ed7d2d57a6ee57fa97d28be4a94bec2d2f5388901ca49b.png" src="_images/849e05c1d057b56559ed7d2d57a6ee57fa97d28be4a94bec2d2f5388901ca49b.png" />
-</div>
-</div>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -7491,12 +6890,12 @@ Fitting 3 folds for each of 1 candidates, totalling 3 fits
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jsb_scb_compared_240925a.html"
+       href="jsb_scb_compared_240925.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">12. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
       </div>
     </a>
 </div>
@@ -7515,36 +6914,28 @@ Fitting 3 folds for each of 1 candidates, totalling 3 fits
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">13.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">13.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">13.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">13.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">12.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">12.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">12.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">12.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">12.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">12.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">12.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">13.6. 지석천 데이터 불러오기</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">13.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">13.7.1. Chl-a 분포 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">13.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">13.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">13.7.4. 방류량, 유량, 유입량 분포</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">13.8. 모델 훈련</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">13.8.1. 전처리: 로그 변환</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">13.8.2. 그레이디언트 부스팅 모델</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">13.8.3. 특성 중요도</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#do-ph">13.8.4. 전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">13.8.5. 죽산보에 승촌보/지석천 특성 추가 후 훈련</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">12.6. 지석천 데이터 불러오기</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">12.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">12.7.1. Chl-a 분포 비교</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">12.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">12.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">12.7.4. 방류량, 유량, 유입량 분포</a></li>
 </ul>
 </li>
 </ul>
