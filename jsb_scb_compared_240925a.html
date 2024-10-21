@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>11. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용 &#8212; 데이터 리포지토리</title>
+    <title>10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용 &#8212; 데이터 리포지토리</title>
   
   
   
@@ -58,10 +58,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'jsb_scb_jsc_added_241010';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'jsb_scb_compared_240925a';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240925a.html" />
+    <link rel="next" title="11. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용" href="jsb_scb_jsc_added_241010.html" />
+    <link rel="prev" title="9. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240919.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,8 +183,8 @@
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240904a.html">7. 죽산보-승촌보 데이터 비교: 모델 훈련 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240908.html">8. 죽산보-승촌보 데이터 비교: 상관관계</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240919.html">9. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925a.html">10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_jsc_added_241010.html">11. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
 </ul>
 
     </div>
@@ -238,7 +239,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/codingalzi/dRepos/blob/master/jupyter-book/jsb_scb_jsc_added_241010.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/codingalzi/dRepos/blob/master/jupyter-book/jsb_scb_compared_240925a.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +287,7 @@
       
       
       
-      <li><a href="https://github.com/codingalzi/dRepos/issues/new?title=Issue%20on%20page%20%2Fjsb_scb_jsc_added_241010.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/codingalzi/dRepos/issues/new?title=Issue%20on%20page%20%2Fjsb_scb_compared_240925a.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +317,7 @@
       
       
       
-      <li><a href="_sources/jsb_scb_jsc_added_241010.ipynb" target="_blank"
+      <li><a href="_sources/jsb_scb_compared_240925a.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -400,7 +401,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</h1>
+    <h1>죽산보 데이터 분석: 승촌보 데이터 추가 활용</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -410,28 +411,34 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">11.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">11.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">11.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">11.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">11.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">10.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">11.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">11.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">11.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">11.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">11.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">11.6. 지석천 데이터 불러오기</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">11.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">11.7.1. Chl-a 분포 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">11.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">11.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">11.7.4. 방류량, 유량, 유입량 분포</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.6. 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">10.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.7. 방류량과 수온의 평균값 활용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.8. 모델 훈련</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">10.8.1. 전처리: 로그 변환</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">10.8.2. 그레이디언트 부스팅 모델</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">10.8.3. 특성 중요도</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#do-ph">10.8.4. 전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">10.8.5. 죽산보 데이터셋에 대해서만 훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">10.8.6. 죽산보에 승촌보 일부 특성 추가 후 훈련</a></li>
 </ul>
 </li>
 </ul>
@@ -446,16 +453,15 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">11. </span>죽산보 데이터 분석: 승촌보와 지석천 데이터 활용<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">10. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2><span class="section-number">11.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보와 승촌보 데이터의 기초 통계 비교</p></li>
-<li><p>승촌보와 죽산보 사이에 위치한 지석천 수질, 수량 데이터를 활용하여 죽산보 데이터 분석</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2><span class="section-number">11.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보/승촌보 수질 데이터</p>
 <ul>
@@ -469,22 +475,10 @@ document.write(`
 <li><p>10분 단위 수집 데이터</p></li>
 </ul>
 </li>
-<li><p>지석천 수질 데이터</p>
-<ul>
-<li><p>2014-2023년</p></li>
-<li><p>시간 단위 수집 데이터</p></li>
-</ul>
-</li>
-<li><p>지석천 유량 데이터</p>
-<ul>
-<li><p>2012-2023년</p></li>
-<li><p>10분 단위 수집 데이터</p></li>
-</ul>
-</li>
 </ul>
 </section>
 <section id="id4">
-<h2><span class="section-number">11.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -537,7 +531,7 @@ document.write(`
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">11.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p><strong>디렉토리 관리 객체</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -568,7 +562,7 @@ document.write(`
 </div>
 </div>
 <section id="id6">
-<h3><span class="section-number">11.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p><strong>데이터 연도</strong></p>
 <ul class="simple">
 <li><p>2012년부터 2023년도 사이의 데이터</p></li>
@@ -2306,7 +2300,7 @@ memory usage: 13.4+ MB
 </div>
 </section>
 <section id="id7">
-<h3><span class="section-number">11.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>죽산보/승촌보 수량 데이터는 <code class="docutils literal notranslate"><span class="pre">'yeongsanriver_weir_dflow'</span></code> 디렉토리에 있음.</p></li>
 <li><p>연도별 데이터는 시트(sheet)로 구분됨.</p></li>
@@ -3833,7 +3827,7 @@ memory usage: 26.9 MB
 </div>
 </section>
 <section id="id8">
-<h3><span class="section-number">11.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p><strong>10분 단위를 1시간 단위로 변경</strong></p>
 <p>먼저 시간별 평균값을 활용하여 1시간 단위 데이터로 변환한다.</p>
 <div class="cell docutils container">
@@ -4264,9 +4258,9 @@ memory usage: 18.4+ MB
 </section>
 </section>
 <section id="id9">
-<h2><span class="section-number">11.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
 <section id="id10">
-<h3><span class="section-number">11.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>일조, 일사, 강수량 세 특성에 다량의 결측치가 포함된다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4650,7 +4644,7 @@ memory usage: 18.4+ MB
 </div>
 </section>
 <section id="id11">
-<h3><span class="section-number">11.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>수치형 특성들의 분포를 살펴보았을 때 이상치 등은 없어 보인다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5135,7 +5129,7 @@ memory usage: 18.4+ MB
 </div>
 </section>
 <section id="id12">
-<h3><span class="section-number">11.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>먼저 지점, 지점명 정보는 중요하지 않기에 해당 특성들을 삭제한다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5386,7 +5380,7 @@ memory usage: 17.0 MB
 </div>
 </section>
 <section id="id13">
-<h3><span class="section-number">11.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">10.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>결측치는 양방향 12시간 선형 보간법으로 대체. 결측 구간별 최대 24시간의 결측치 대체.</p></li>
 <li><p>예) 결측치가 36개인 구간이 있다면 처음-12개와 25-36개만 결측치 대체.</p></li>
@@ -5573,705 +5567,84 @@ memory usage: 10.2 MB
 </section>
 </section>
 <section id="id14">
-<h2><span class="section-number">11.6. </span>지석천 데이터 불러오기<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">10.6. </span>상관관계<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<section id="chla">
+<h3><span class="section-number">10.6.1. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#chla" title="Link to this heading">#</a></h3>
+<p><strong>경우: 죽산보</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_directory</span> <span class="o">=</span> <span class="n">base_path</span> <span class="o">/</span> <span class="s2">&quot;jiseokcheon&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsb_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Correlation with CHLA of JSB&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Correlation with CHLA of JSB&#39;&gt;
+</pre></div>
 </div>
-<p>방류량과 수질 데이터 파일</p>
+<img alt="_images/848f8d276b2da361ac455c18f42a81609952255e5167d6495ac089eec199bab6.png" src="_images/848f8d276b2da361ac455c18f42a81609952255e5167d6495ac089eec199bab6.png" />
+</div>
+</div>
+<p><strong>경우: 승촌보</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;jiseokcheon_flow_2012-2023.xlsx&quot;</span><span class="p">,</span> <span class="s2">&quot;jiseokcheon_wQuality_2014-2023.xlsx&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scb_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Correlation with CHLA of SCB&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Correlation with CHLA of SCB&#39;&gt;
+</pre></div>
 </div>
-<p>유량 데이터 불러오기</p>
+<img alt="_images/403f4c4a1f0b9d54c7d2ee1dbe5dc5e2174186a7ab90b49a9f7769f91bc0d90b.png" src="_images/403f4c4a1f0b9d54c7d2ee1dbe5dc5e2174186a7ab90b49a9f7769f91bc0d90b.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="id15">
+<h2><span class="section-number">10.7. </span>방류량과 수온의 평균값 활용<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<p>지정된 특성에 대해 일(day) 단위의 윈도우(window)를 사용하여 지정된 기간동안의 평균값을 새로운 특성으로 추가한다. 특성의 기본값으로 수온과 방류량을 사용한다.</p>
 <ul class="simple">
-<li><p>보가 아님.</p></li>
-<li><p>승촌보와 죽산보 사이에 영산강으로 흘러들어가는 유량으로 활용</p></li>
+<li><p>일(24시간) 단위로 윈도우 사용</p></li>
+<li><p>일(day) 수를 지정하면 24시간 단위로 변환해서 윈도우 적용.</p></li>
+<li><p>연도(year) 지정 가능</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_flow_yearly</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">jsc_directory</span> <span class="o">/</span> <span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> 
-<span class="c1">#                                  skiprows=0, </span>
-                                 <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> 
-                                 <span class="n">sheet_name</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                                 <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;ND&#39;</span><span class="p">,</span>
-                                 <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 시간 특성을 date time으로 파싱</span>
-                                <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_flow_yearly</span> <span class="o">=</span> <span class="n">jsc_flow_yearly</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;측정일시&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_flow_yearly</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;DateTime&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_flow_yearly</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">feature_windowing</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> <span class="n">window</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    df: 주어진 데이터프레임</span>
+<span class="sd">    feature: 윈도우 적용대상 특성. 기본값은 수온과 방류량.</span>
+<span class="sd">    window: 일(day) 단위 윈도우 크기. 기본값은 1일.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+    <span class="n">window_</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">window</span><span class="o">*</span><span class="mi">24</span><span class="si">}</span><span class="s2">h&quot;</span> <span class="c1"># 일 단위를 24시간 단위로 변환</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>유량</th>
-    </tr>
-    <tr>
-      <th>DateTime</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2012-07-01 00:00:00</th>
-      <td>9.02</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 00:10:00</th>
-      <td>9.02</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 00:20:00</th>
-      <td>9.02</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 00:30:00</th>
-      <td>9.02</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 00:40:00</th>
-      <td>9.02</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:10:00</th>
-      <td>1.34</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:20:00</th>
-      <td>0.89</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:30:00</th>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:40:00</th>
-      <td>0.22</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:50:00</th>
-      <td>0.89</td>
-    </tr>
-  </tbody>
-</table>
-<p>604943 rows × 1 columns</p>
-</div></div></div>
-</div>
-<p><strong>10분 단위를 1시간 단위로 변경</strong></p>
-<p>먼저 시간별 평균값을 활용하여 1시간 단위 데이터로 변환한다.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_flow</span> <span class="o">=</span> <span class="n">jsc_flow_yearly</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;h&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">jsc_flow</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+    <span class="n">new_features</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">suffix</span><span class="p">:</span>
+            <span class="n">new_features</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">window</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;d_&#39;</span><span class="o">+</span><span class="n">ft</span><span class="o">+</span><span class="n">suffix</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">ft</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window_</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">new_features</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">window</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;d_&#39;</span><span class="o">+</span><span class="n">ft</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">ft</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window_</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">new_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">new_features</span><span class="p">)</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>유량</th>
-    </tr>
-    <tr>
-      <th>DateTime</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2012-07-01 00:00:00</th>
-      <td>9.020000</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 01:00:00</th>
-      <td>9.020000</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 02:00:00</th>
-      <td>9.020000</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 03:00:00</th>
-      <td>10.286667</td>
-    </tr>
-    <tr>
-      <th>2012-07-01 04:00:00</th>
-      <td>10.540000</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 19:00:00</th>
-      <td>1.193333</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 20:00:00</th>
-      <td>1.081667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 21:00:00</th>
-      <td>1.791667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 22:00:00</th>
-      <td>1.081667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:00:00</th>
-      <td>0.668333</td>
-    </tr>
-  </tbody>
-</table>
-<p>100824 rows × 1 columns</p>
-</div></div></div>
+    <span class="n">df_added</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">new_features</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">year</span><span class="p">:</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">df_added</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="n">year</span>
+        <span class="n">df_added</span> <span class="o">=</span> <span class="n">df_added</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">df_added</span>
+</pre></div>
 </div>
-<p>수질 데이터 불러오기</p>
+</div>
+</div>
+<p>예제: 죽산보/승촌보 데이터에 지난 하룻 동안의 수온과 방류량 평균값을 새로운 특성으로 추가</p>
+<ul class="simple">
+<li><p>죽산보 2022년 데이터에 특성 추가</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_dict_yearly</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">jsc_directory</span> <span class="o">/</span> <span class="n">files</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
-                                 <span class="n">skiprows</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-                                 <span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> 
-                                 <span class="n">sheet_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                                 <span class="n">na_values</span><span class="o">=</span><span class="s1">&#39;ND&#39;</span><span class="p">,</span>
-                                 <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 시간 특성을 date time으로 파싱</span>
-                                <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_wQ_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">jsc_dict_yearly</span><span class="p">[</span><span class="n">year</span><span class="p">]</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">jsc_dict_yearly</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_wQ_df</span> <span class="o">=</span> <span class="n">jsc_wQ_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;측정일&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;측정소명&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_wQ_df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;DateTime&#39;</span>
-<span class="n">jsc_wQ_df</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>수온 (℃)</th>
-      <th>수소이온농도</th>
-      <th>전기전도도 (μS/cm)</th>
-      <th>용존산소 (mg/L)</th>
-      <th>총유기탄소 (mg/L)</th>
-      <th>총질소 (mg/L)</th>
-      <th>총인 (mg/L)</th>
-      <th>클로로필-a (mg/㎥)</th>
-    </tr>
-    <tr>
-      <th>DateTime</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2014-01-01 00:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 01:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 02:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 03:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 04:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 19:00:00</th>
-      <td>5.8</td>
-      <td>8.0</td>
-      <td>265.0</td>
-      <td>13.2</td>
-      <td>3.7</td>
-      <td>3.727</td>
-      <td>0.076</td>
-      <td>5.1</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 20:00:00</th>
-      <td>5.8</td>
-      <td>7.8</td>
-      <td>265.0</td>
-      <td>12.7</td>
-      <td>3.7</td>
-      <td>3.663</td>
-      <td>0.073</td>
-      <td>4.6</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 21:00:00</th>
-      <td>5.8</td>
-      <td>7.7</td>
-      <td>266.0</td>
-      <td>12.4</td>
-      <td>3.8</td>
-      <td>3.573</td>
-      <td>0.069</td>
-      <td>4.5</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 22:00:00</th>
-      <td>5.7</td>
-      <td>7.6</td>
-      <td>266.0</td>
-      <td>12.3</td>
-      <td>3.8</td>
-      <td>3.565</td>
-      <td>0.067</td>
-      <td>4.5</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:00:00</th>
-      <td>5.7</td>
-      <td>7.6</td>
-      <td>266.0</td>
-      <td>12.2</td>
-      <td>3.8</td>
-      <td>3.565</td>
-      <td>0.065</td>
-      <td>4.5</td>
-    </tr>
-  </tbody>
-</table>
-<p>87646 rows × 8 columns</p>
-</div></div></div>
-</div>
-<p><strong>수질 데이터와 유량 데이터 통합</strong></p>
-<p>수질 데이터와 유량 데이터를 날짜 기준으로 통합한다.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_data</span> <span class="o">=</span> <span class="n">jsc_wQ_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">jsc_flow</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
-<span class="n">jsc_data</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>수온 (℃)</th>
-      <th>수소이온농도</th>
-      <th>전기전도도 (μS/cm)</th>
-      <th>용존산소 (mg/L)</th>
-      <th>총유기탄소 (mg/L)</th>
-      <th>총질소 (mg/L)</th>
-      <th>총인 (mg/L)</th>
-      <th>클로로필-a (mg/㎥)</th>
-      <th>유량</th>
-    </tr>
-    <tr>
-      <th>DateTime</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2014-01-01 00:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.110000</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 01:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.110000</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 02:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.110000</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 03:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.110000</td>
-    </tr>
-    <tr>
-      <th>2014-01-01 04:00:00</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>5.110000</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 19:00:00</th>
-      <td>5.8</td>
-      <td>8.0</td>
-      <td>265.0</td>
-      <td>13.2</td>
-      <td>3.7</td>
-      <td>3.727</td>
-      <td>0.076</td>
-      <td>5.1</td>
-      <td>1.193333</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 20:00:00</th>
-      <td>5.8</td>
-      <td>7.8</td>
-      <td>265.0</td>
-      <td>12.7</td>
-      <td>3.7</td>
-      <td>3.663</td>
-      <td>0.073</td>
-      <td>4.6</td>
-      <td>1.081667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 21:00:00</th>
-      <td>5.8</td>
-      <td>7.7</td>
-      <td>266.0</td>
-      <td>12.4</td>
-      <td>3.8</td>
-      <td>3.573</td>
-      <td>0.069</td>
-      <td>4.5</td>
-      <td>1.791667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 22:00:00</th>
-      <td>5.7</td>
-      <td>7.6</td>
-      <td>266.0</td>
-      <td>12.3</td>
-      <td>3.8</td>
-      <td>3.565</td>
-      <td>0.067</td>
-      <td>4.5</td>
-      <td>1.081667</td>
-    </tr>
-    <tr>
-      <th>2023-12-31 23:00:00</th>
-      <td>5.7</td>
-      <td>7.6</td>
-      <td>266.0</td>
-      <td>12.2</td>
-      <td>3.8</td>
-      <td>3.565</td>
-      <td>0.065</td>
-      <td>4.5</td>
-      <td>0.668333</td>
-    </tr>
-  </tbody>
-</table>
-<p>87646 rows × 9 columns</p>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-DatetimeIndex: 87646 entries, 2014-01-01 00:00:00 to 2023-12-31 23:00:00
-Data columns (total 9 columns):
- #   Column         Non-Null Count  Dtype  
----  ------         --------------  -----  
- 0   수온 (℃)         74813 non-null  float64
- 1   수소이온농도         74799 non-null  float64
- 2   전기전도도 (μS/cm)  74469 non-null  float64
- 3   용존산소 (mg/L)    74055 non-null  float64
- 4   총유기탄소 (mg/L)   68089 non-null  float64
- 5   총질소 (mg/L)     70289 non-null  float64
- 6   총인 (mg/L)      70657 non-null  float64
- 7   클로로필-a (mg/㎥)  69530 non-null  float64
- 8   유량             87071 non-null  float64
-dtypes: float64(9)
-memory usage: 6.7 MB
-</pre></div>
-</div>
-</div>
-</div>
-<p>영어 특성명 지정</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">features_english</span><span class="p">[</span><span class="s1">&#39;유량&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Flow&#39;</span>
-<span class="n">features_english</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;수온 (℃)&#39;: &#39;Water_TA&#39;,
- &#39;수소이온농도&#39;: &#39;pH&#39;,
- &#39;전기전도도 (μS/cm)&#39;: &#39;EC&#39;,
- &#39;용존산소 (mg/L)&#39;: &#39;DO&#39;,
- &#39;탁도 (NTU)&#39;: &#39;Turb&#39;,
- &#39;총유기탄소 (mg/L)&#39;: &#39;TOC&#39;,
- &#39;총질소 (mg/L)&#39;: &#39;TN&#39;,
- &#39;총인 (mg/L)&#39;: &#39;TP&#39;,
- &#39;클로로필-a (mg/㎥)&#39;: &#39;CHLA&#39;,
- &#39;기온(°C)&#39;: &#39;Air_TA&#39;,
- &#39;강수량(mm)&#39;: &#39;RN&#39;,
- &#39;풍속(m/s)&#39;: &#39;WS&#39;,
- &#39;일조(hr)&#39;: &#39;SS&#39;,
- &#39;일사(MJ/m2)&#39;: &#39;SI&#39;,
- &#39;전운량(10분위)&#39;: &#39;CA_TOT&#39;,
- &#39;중하층운량(10분위)&#39;: &#39;CA_MID&#39;,
- &#39;상류수위(EL.m)&#39;: &#39;Up_WL&#39;,
- &#39;하류수위(EL.m)&#39;: &#39;Down_WL&#39;,
- &#39;유입량(㎥/s)&#39;: &#39;Inflow&#39;,
- &#39;방류량(㎥/s)&#39;: &#39;Discharge&#39;,
- &#39;유량&#39;: &#39;Flow&#39;}
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_data</span> <span class="o">=</span> <span class="n">jsc_data</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">features_english</span><span class="p">)</span>
-<span class="n">jsc_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-DatetimeIndex: 87646 entries, 2014-01-01 00:00:00 to 2023-12-31 23:00:00
-Data columns (total 9 columns):
- #   Column    Non-Null Count  Dtype  
----  ------    --------------  -----  
- 0   Water_TA  74813 non-null  float64
- 1   pH        74799 non-null  float64
- 2   EC        74469 non-null  float64
- 3   DO        74055 non-null  float64
- 4   TOC       68089 non-null  float64
- 5   TN        70289 non-null  float64
- 6   TP        70657 non-null  float64
- 7   CHLA      69530 non-null  float64
- 8   Flow      87071 non-null  float64
-dtypes: float64(9)
-memory usage: 6.7 MB
-</pre></div>
-</div>
-</div>
-</div>
-<p>지석천 유량 데이터에 음수 포함되어 삭제 필요</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">feature_windowing</span><span class="p">(</span><span class="n">jsb_df</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2022</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6298,560 +5671,1070 @@ memory usage: 6.7 MB
       <th>pH</th>
       <th>EC</th>
       <th>DO</th>
+      <th>Turb</th>
       <th>TOC</th>
       <th>TN</th>
       <th>TP</th>
       <th>CHLA</th>
-      <th>Flow</th>
+      <th>Air_TA</th>
+      <th>RN</th>
+      <th>WS</th>
+      <th>SS</th>
+      <th>SI</th>
+      <th>CA_TOT</th>
+      <th>CA_MID</th>
+      <th>Up_WL</th>
+      <th>Down_WL</th>
+      <th>Inflow</th>
+      <th>Discharge</th>
+      <th>1d_Water_TA</th>
+      <th>1d_Discharge</th>
+    </tr>
+    <tr>
+      <th>DateTime</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
-      <td>74813.000000</td>
-      <td>74799.000000</td>
-      <td>74469.000000</td>
-      <td>74055.000000</td>
-      <td>68089.000000</td>
-      <td>70289.000000</td>
-      <td>70657.000000</td>
-      <td>69530.000000</td>
-      <td>87071.000000</td>
+      <th>2022-01-01 00:00:00</th>
+      <td>5.2</td>
+      <td>7.8</td>
+      <td>388.0</td>
+      <td>13.0</td>
+      <td>5.5</td>
+      <td>4.6</td>
+      <td>6.568</td>
+      <td>0.058</td>
+      <td>84.2</td>
+      <td>-4.1</td>
+      <td>0.0</td>
+      <td>2.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>1.49</td>
+      <td>-1.153333</td>
+      <td>12.720000</td>
+      <td>12.720000</td>
+      <td>5.633333</td>
+      <td>15.586806</td>
     </tr>
     <tr>
-      <th>mean</th>
-      <td>17.136796</td>
-      <td>7.953344</td>
-      <td>246.149378</td>
-      <td>9.425010</td>
-      <td>3.346692</td>
-      <td>2.800696</td>
-      <td>0.089232</td>
-      <td>31.127953</td>
-      <td>11.802198</td>
+      <th>2022-01-01 01:00:00</th>
+      <td>5.2</td>
+      <td>7.7</td>
+      <td>388.0</td>
+      <td>12.9</td>
+      <td>5.4</td>
+      <td>4.5</td>
+      <td>6.443</td>
+      <td>0.058</td>
+      <td>81.7</td>
+      <td>-4.2</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.0</td>
+      <td>4.0</td>
+      <td>1.49</td>
+      <td>-1.138333</td>
+      <td>12.720000</td>
+      <td>12.720000</td>
+      <td>5.604167</td>
+      <td>15.232639</td>
     </tr>
     <tr>
-      <th>std</th>
-      <td>8.639400</td>
-      <td>0.785745</td>
-      <td>56.960788</td>
-      <td>3.321524</td>
-      <td>1.194048</td>
-      <td>1.031938</td>
-      <td>0.041095</td>
-      <td>33.950539</td>
-      <td>46.127937</td>
+      <th>2022-01-01 02:00:00</th>
+      <td>5.1</td>
+      <td>7.7</td>
+      <td>388.0</td>
+      <td>12.9</td>
+      <td>5.4</td>
+      <td>4.5</td>
+      <td>6.465</td>
+      <td>0.056</td>
+      <td>83.6</td>
+      <td>-4.3</td>
+      <td>0.0</td>
+      <td>1.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
+      <td>1.49</td>
+      <td>-1.150000</td>
+      <td>12.720000</td>
+      <td>12.720000</td>
+      <td>5.575000</td>
+      <td>14.878472</td>
     </tr>
     <tr>
-      <th>min</th>
-      <td>0.200000</td>
-      <td>6.400000</td>
-      <td>74.000000</td>
-      <td>0.500000</td>
-      <td>1.000000</td>
-      <td>0.212000</td>
-      <td>0.003000</td>
-      <td>0.600000</td>
-      <td>-4.640000</td>
+      <th>2022-01-01 03:00:00</th>
+      <td>5.1</td>
+      <td>7.7</td>
+      <td>388.0</td>
+      <td>12.9</td>
+      <td>5.3</td>
+      <td>4.5</td>
+      <td>6.645</td>
+      <td>0.055</td>
+      <td>83.5</td>
+      <td>-4.1</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>9.0</td>
+      <td>0.0</td>
+      <td>1.49</td>
+      <td>-1.160000</td>
+      <td>12.720000</td>
+      <td>12.720000</td>
+      <td>5.545833</td>
+      <td>14.834861</td>
     </tr>
     <tr>
-      <th>25%</th>
-      <td>9.200000</td>
-      <td>7.300000</td>
-      <td>209.000000</td>
-      <td>7.200000</td>
-      <td>2.500000</td>
-      <td>2.087000</td>
-      <td>0.058000</td>
-      <td>10.500000</td>
-      <td>2.645000</td>
+      <th>2022-01-01 04:00:00</th>
+      <td>5.1</td>
+      <td>7.7</td>
+      <td>388.0</td>
+      <td>12.9</td>
+      <td>5.4</td>
+      <td>4.5</td>
+      <td>6.734</td>
+      <td>0.057</td>
+      <td>86.2</td>
+      <td>-4.0</td>
+      <td>0.0</td>
+      <td>3.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>9.0</td>
+      <td>0.0</td>
+      <td>1.49</td>
+      <td>-1.153333</td>
+      <td>12.720000</td>
+      <td>12.720000</td>
+      <td>5.520833</td>
+      <td>14.839028</td>
     </tr>
     <tr>
-      <th>50%</th>
-      <td>17.700000</td>
-      <td>7.700000</td>
-      <td>239.000000</td>
-      <td>9.300000</td>
-      <td>3.100000</td>
-      <td>2.552000</td>
-      <td>0.083000</td>
-      <td>19.200000</td>
-      <td>4.465000</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>75%</th>
-      <td>24.600000</td>
-      <td>8.700000</td>
-      <td>284.000000</td>
-      <td>11.800000</td>
-      <td>4.000000</td>
-      <td>3.310000</td>
-      <td>0.114000</td>
-      <td>38.900000</td>
-      <td>7.743333</td>
+      <th>2022-12-31 19:00:00</th>
+      <td>5.3</td>
+      <td>8.3</td>
+      <td>468.0</td>
+      <td>13.8</td>
+      <td>7.2</td>
+      <td>5.1</td>
+      <td>5.928</td>
+      <td>0.046</td>
+      <td>40.6</td>
+      <td>2.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.52</td>
+      <td>-1.490000</td>
+      <td>10.288333</td>
+      <td>10.296667</td>
+      <td>5.229167</td>
+      <td>11.368681</td>
     </tr>
     <tr>
-      <th>max</th>
-      <td>37.000000</td>
-      <td>10.200000</td>
-      <td>465.000000</td>
-      <td>19.700000</td>
-      <td>9.900000</td>
-      <td>9.329000</td>
-      <td>0.786000</td>
-      <td>500.000000</td>
-      <td>1904.176667</td>
+      <th>2022-12-31 20:00:00</th>
+      <td>5.2</td>
+      <td>8.3</td>
+      <td>468.0</td>
+      <td>13.6</td>
+      <td>7.2</td>
+      <td>4.9</td>
+      <td>5.969</td>
+      <td>0.047</td>
+      <td>38.6</td>
+      <td>2.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.52</td>
+      <td>-1.486667</td>
+      <td>10.406667</td>
+      <td>10.416667</td>
+      <td>5.225000</td>
+      <td>11.372778</td>
+    </tr>
+    <tr>
+      <th>2022-12-31 21:00:00</th>
+      <td>5.3</td>
+      <td>8.3</td>
+      <td>468.0</td>
+      <td>13.7</td>
+      <td>7.1</td>
+      <td>5.1</td>
+      <td>5.925</td>
+      <td>0.046</td>
+      <td>38.7</td>
+      <td>1.2</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.52</td>
+      <td>-1.496667</td>
+      <td>10.425000</td>
+      <td>10.426667</td>
+      <td>5.225000</td>
+      <td>11.377986</td>
+    </tr>
+    <tr>
+      <th>2022-12-31 22:00:00</th>
+      <td>5.2</td>
+      <td>8.3</td>
+      <td>468.0</td>
+      <td>13.7</td>
+      <td>7.0</td>
+      <td>4.9</td>
+      <td>5.988</td>
+      <td>0.045</td>
+      <td>38.3</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.52</td>
+      <td>-1.508333</td>
+      <td>10.398333</td>
+      <td>10.395000</td>
+      <td>5.220833</td>
+      <td>11.382153</td>
+    </tr>
+    <tr>
+      <th>2022-12-31 23:00:00</th>
+      <td>5.2</td>
+      <td>8.3</td>
+      <td>468.0</td>
+      <td>13.6</td>
+      <td>7.0</td>
+      <td>4.9</td>
+      <td>6.056</td>
+      <td>0.044</td>
+      <td>37.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.52</td>
+      <td>-1.493333</td>
+      <td>10.385000</td>
+      <td>10.380000</td>
+      <td>5.220833</td>
+      <td>11.386458</td>
     </tr>
   </tbody>
 </table>
+<p>7893 rows × 22 columns</p>
 </div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="n">jsc_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;Flow&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span>
-<span class="n">jsc_data</span> <span class="o">=</span> <span class="n">jsc_data</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>결측치 보간</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_df</span> <span class="o">=</span> <span class="n">jsc_data</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">limit_direction</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-DatetimeIndex: 65653 entries, 2014-03-31 12:00:00 to 2023-12-31 23:00:00
-Data columns (total 9 columns):
- #   Column    Non-Null Count  Dtype  
----  ------    --------------  -----  
- 0   Water_TA  65653 non-null  float64
- 1   pH        65653 non-null  float64
- 2   EC        65653 non-null  float64
- 3   DO        65653 non-null  float64
- 4   TOC       65653 non-null  float64
- 5   TN        65653 non-null  float64
- 6   TP        65653 non-null  float64
- 7   CHLA      65653 non-null  float64
- 8   Flow      65653 non-null  float64
-dtypes: float64(9)
-memory usage: 5.0 MB
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="chla">
-<h2><span class="section-number">11.7. </span>승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교<a class="headerlink" href="#chla" title="Link to this heading">#</a></h2>
-<section id="chl-a">
-<h3><span class="section-number">11.7.1. </span>Chl-a 분포 비교<a class="headerlink" href="#chl-a" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Chl-a 분포</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chla_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">scb_df</span><span class="p">[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">jsc_df</span><span class="p">[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">jsb_df</span><span class="p">[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">chla_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;scb_chla&#39;</span><span class="p">,</span> <span class="s1">&#39;jsc_chla&#39;</span><span class="p">,</span> <span class="s1">&#39;jsb_chla&#39;</span><span class="p">]</span>
-<span class="n">chla_df</span> <span class="o">=</span> <span class="n">chla_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">chla_df</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/95a39c3762611ce0dce56f7c168153e051db5f83df2e2635a0a95c6126fccf2a.png" src="_images/95a39c3762611ce0dce56f7c168153e051db5f83df2e2635a0a95c6126fccf2a.png" />
-</div>
-</div>
-</section>
-<section id="id15">
-<h3><span class="section-number">11.7.2. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<p><strong>경우: 죽산보</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsb_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Correlation with CHLA of JSB&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Correlation with CHLA of JSB&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/66c1d04f89d611f8867c3351eb89e067eed7b3853cd999e0b6519bf63de4a534.png" src="_images/66c1d04f89d611f8867c3351eb89e067eed7b3853cd999e0b6519bf63de4a534.png" />
-</div>
-</div>
-<p><strong>경우: 지석천</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsc_data</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Correlation with CHLA of JSC&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Correlation with CHLA of JSC&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/1ec8208fd519445dba7cab52e79778cf626de62a9704145b5cdaef74618535eb.png" src="_images/1ec8208fd519445dba7cab52e79778cf626de62a9704145b5cdaef74618535eb.png" />
-</div>
-</div>
-<p><strong>경우: 승촌보</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scb_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Correlation with CHLA of SCB&quot;</span><span class="p">,</span> <span class="n">rot</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;Correlation with CHLA of SCB&#39;&gt;
-</pre></div>
-</div>
-<img alt="_images/c36b02effb5d8543d4207ffcc0478703f0fd5dc2146af2a835b57b593af05b47.png" src="_images/c36b02effb5d8543d4207ffcc0478703f0fd5dc2146af2a835b57b593af05b47.png" />
-</div>
-</div>
-</section>
-<section id="chl-a-chl-a">
-<h3><span class="section-number">11.7.3. </span>죽산보 Chl-a와 승촌보 Chl-a와의 상관관계<a class="headerlink" href="#chl-a-chl-a" title="Link to this heading">#</a></h3>
-<p>죽산보의 Chl-a와 죽산보, 지석천의 Chl-a와의 상관관계</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chla_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;jsb_chla&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>scb_chla    0.291837
-jsc_chla    0.093042
-jsb_chla    1.000000
-Name: jsb_chla, dtype: float64
-</pre></div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>일평균 상관관계</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chla_daily_df</span> <span class="o">=</span> <span class="n">chla_df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">chla_daily_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;jsb_chla&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>scb_chla    0.302934
-jsc_chla    0.088501
-jsb_chla    1.000000
-Name: jsb_chla, dtype: float64
-</pre></div>
-</div>
-</div>
-</div>
-<ul class="simple">
-<li><p>승촌보 CHLA 1일 쉬프트 후 상관관계</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chla_daily_df</span><span class="p">[</span><span class="s1">&#39;scb_chla_shift_1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">chla_daily_df</span><span class="p">[</span><span class="s1">&#39;scb_chla&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">periods</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
-<span class="n">chla_daily_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;jsb_chla&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>scb_chla            0.302934
-jsc_chla            0.088501
-jsb_chla            1.000000
-scb_chla_shift_1    0.276325
-Name: jsb_chla, dtype: float64
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>윈도우 적용: 지난 2일 동안의 승촌보 Chl-a 평균값과의 상관관계</strong></p>
-<p>아래 함수는
-지정된 특성에 대해 일(day) 단위의 윈도우(window)를 사용하여 지정된 기간동안의 평균값을 새로운 특성으로 추가한다. 특성의 기본값으로 수온과 방류량을 사용한다.</p>
-<ul class="simple">
-<li><p>일(24시간) 단위로 윈도우 사용</p></li>
-<li><p>일(day) 수를 지정하면 24시간 단위로 변환해서 윈도우 적용.</p></li>
-<li><p>연도(year) 지정 가능</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">feature_windowing</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[],</span> <span class="n">window</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    df: 주어진 데이터프레임</span>
-<span class="sd">    features: 윈도우 적용대상 특성.</span>
-<span class="sd">    window: 일(day) 단위 윈도우 크기. 기본값은 1일.</span>
-<span class="sd">    suffix: 윈도우 적용된 특성에 사용되는 접미사</span>
-<span class="sd">    year: 연도 지정. 미 지정시 전체 데이터셋 활용</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">window_</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">window</span><span class="o">*</span><span class="mi">24</span><span class="si">}</span><span class="s2">h&quot;</span> <span class="c1"># 일 단위를 24시간 단위로 변환</span>
-
-    <span class="n">new_features</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">suffix</span><span class="p">:</span>
-            <span class="n">new_features</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">window</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;d_&#39;</span><span class="o">+</span><span class="n">ft</span><span class="o">+</span><span class="n">suffix</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">ft</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window_</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">new_features</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">window</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;d_&#39;</span><span class="o">+</span><span class="n">ft</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">ft</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window_</span><span class="p">,</span> <span class="n">min_periods</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-    <span class="n">new_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">new_features</span><span class="p">)</span>
-
-    <span class="n">df_added</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df</span><span class="p">,</span> <span class="n">new_features</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    
-    <span class="k">if</span> <span class="n">year</span><span class="p">:</span>
-        <span class="n">mask</span> <span class="o">=</span> <span class="n">df_added</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">year</span> <span class="o">==</span> <span class="n">year</span>
-        <span class="n">df_added</span> <span class="o">=</span> <span class="n">df_added</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
-    
-    <span class="k">return</span> <span class="n">df_added</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">feature_windowing</span><span class="p">(</span><span class="n">chla_daily_df</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;scb_chla&#39;</span><span class="p">,</span> <span class="s1">&#39;jsc_chla&#39;</span><span class="p">],</span> <span class="n">window</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s1">&#39;jsb_chla&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>scb_chla            0.302934
-jsc_chla            0.088501
-jsb_chla            1.000000
-scb_chla_shift_1    0.276325
-2d_scb_chla         0.299436
-2d_jsc_chla         0.079991
-Name: jsb_chla, dtype: float64
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="id16">
-<h3><span class="section-number">11.7.4. </span>방류량, 유량, 유입량 분포<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">scb_df</span><span class="p">[</span><span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> <span class="n">jsc_df</span><span class="p">[</span><span class="s1">&#39;Flow&#39;</span><span class="p">],</span> <span class="n">jsb_df</span><span class="p">[</span><span class="s1">&#39;Inflow&#39;</span><span class="p">],</span> <span class="n">jsb_df</span><span class="p">[</span><span class="s1">&#39;Discharge&#39;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">flow_df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;scb_discharge&#39;</span><span class="p">,</span> <span class="s1">&#39;jsc_flow&#39;</span><span class="p">,</span> <span class="s1">&#39;jsb_inflow&#39;</span><span class="p">,</span> <span class="s1">&#39;jsb_discharge&#39;</span><span class="p">]</span>
-<span class="n">flow_df</span> <span class="o">=</span> <span class="n">flow_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p><strong>지석천 유입량 = 승촌보 방류량 + 지석천 유량???</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span><span class="p">[</span><span class="s1">&#39;scb+jsc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">flow_df</span><span class="p">[</span><span class="s1">&#39;scb_discharge&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">flow_df</span><span class="p">[</span><span class="s1">&#39;jsc_flow&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>scb_discharge</th>
-      <th>jsc_flow</th>
-      <th>jsb_inflow</th>
-      <th>jsb_discharge</th>
-      <th>scb+jsc</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>38987.000000</td>
-      <td>38987.000000</td>
-      <td>38987.000000</td>
-      <td>38987.000000</td>
-      <td>38987.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>23.755848</td>
-      <td>8.090212</td>
-      <td>39.928416</td>
-      <td>38.475783</td>
-      <td>31.846060</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>42.391332</td>
-      <td>21.244834</td>
-      <td>74.556119</td>
-      <td>74.893501</td>
-      <td>58.602248</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>-13.335000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>10.861667</td>
-      <td>2.540000</td>
-      <td>15.692500</td>
-      <td>13.736667</td>
-      <td>13.465833</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>14.980000</td>
-      <td>4.091667</td>
-      <td>24.513333</td>
-      <td>23.213333</td>
-      <td>19.861667</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>24.459167</td>
-      <td>7.360000</td>
-      <td>39.824167</td>
-      <td>38.498333</td>
-      <td>31.227500</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>1360.893333</td>
-      <td>605.218333</td>
-      <td>1854.766667</td>
-      <td>1963.140000</td>
-      <td>1473.080000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<p>죽산보 유입량에 음수 있어서 제거.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="n">flow_df</span><span class="p">[</span><span class="s1">&#39;jsb_inflow&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span>
-<span class="n">flow_df</span> <span class="o">=</span> <span class="n">flow_df</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">flow_df</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/f52fe26bf8e4b3ca50eef52276dcb7ea322e31553cd447de3e6db6989b169f26.png" src="_images/f52fe26bf8e4b3ca50eef52276dcb7ea322e31553cd447de3e6db6989b169f26.png" />
-</div>
-</div>
-<p>(방)유량의 범위가 크기에 로그 변환 후 다시 확인.</p>
+<h2><span class="section-number">10.8. </span>모델 훈련<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h3><span class="section-number">10.8.1. </span>전처리: 로그 변환<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p><strong>로그 변환기</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">FunctionTransformer</span>
 
-<span class="n">log_transformer</span> <span class="o">=</span> <span class="n">FunctionTransformer</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">)</span>
+<span class="n">ft_transformer</span> <span class="o">=</span> <span class="n">FunctionTransformer</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong><code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 특성 로그 변환</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">ft_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">jsb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: ylabel=&#39;Count&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/6164079b89cddcf9f695f1e242df08759e8c69e00c0982a3d7eeba653e1f8aba.png" src="_images/6164079b89cddcf9f695f1e242df08759e8c69e00c0982a3d7eeba653e1f8aba.png" />
+</div>
+</div>
+<p><strong>죽산보/승촌보 데이터의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 특성 로그 변환</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">jsb_df_log</span> <span class="o">=</span> <span class="n">jsb_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">jsb_df_log</span><span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ft_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">jsb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]])</span>
+<span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">log_flow_df</span> <span class="o">=</span> <span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">flow_df</span><span class="p">)</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">log_flow_df</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scb_df_log</span> <span class="o">=</span> <span class="n">scb_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">scb_df_log</span><span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ft_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">scb_df</span><span class="p">[[</span><span class="s1">&#39;CHLA&#39;</span><span class="p">]])</span>
+<span class="n">scb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/542ec8bef5de0901bb81525efa35361b4128552e303c9fe02b76ff8b21f25808.png" src="_images/542ec8bef5de0901bb81525efa35361b4128552e303c9fe02b76ff8b21f25808.png" />
 </div>
-</div>
-<p><strong>일별 평균값 활용</strong></p>
+</section>
+<section id="id18">
+<h3><span class="section-number">10.8.2. </span>그레이디언트 부스팅 모델<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_daily_df</span> <span class="o">=</span> <span class="n">flow_df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">log_flow_daily_df</span> <span class="o">=</span> <span class="n">log_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">flow_daily_df</span><span class="p">)</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">log_flow_daily_df</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gb_reg</span> <span class="o">=</span> <span class="n">GradientBoostingRegressor</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/c385b3d46d05ff3f1d28ba78f1624cc9a155489690f3505a45b55253f59b1e31.png" src="_images/c385b3d46d05ff3f1d28ba78f1624cc9a155489690f3505a45b55253f59b1e31.png" />
+</div>
+<p>우선 작동여부를 확인하기 위해 하나의 파라미터 조합만 사용</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;subsample&quot;</span><span class="p">:[</span><span class="mf">0.6</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:[</span><span class="mi">10</span><span class="p">],</span> 
+    <span class="s2">&quot;learning_rate&quot;</span><span class="p">:[</span><span class="mf">0.05</span><span class="p">],</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:[</span><span class="mi">1200</span><span class="p">]</span>
+    <span class="p">}</span>
+</pre></div>
 </div>
 </div>
-<p><strong>승촌보+지석천과 죽산보 유입량 일별 변화</strong></p>
+</div>
+<p><strong><code class="docutils literal notranslate"><span class="pre">gridsearch()</span></code> 함수</strong></p>
 <ul class="simple">
-<li><p>일별 변화</p></li>
+<li><p>그리드 탐색 훈련을 진행</p></li>
+<li><p>인자: 모델, 하이퍼파라미터 조합, 특성, 윈도우 크기, 년도</p>
+<ul>
+<li><p>년도: <code class="docutils literal notranslate"><span class="pre">None</span></code>이면 전체 데이터셋을 훈련셋으로 지정</p></li>
+</ul>
+</li>
+<li><p>지정된 특성의 지정된 크기만큼의 윈도우 기간 동안의 평균값을 새로운 특성으로 추가한 후에 훈련 시작</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;jsb_inflow&#39;</span><span class="p">,</span> <span class="s1">&#39;scb+jsc&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gridsearch</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> 
+               <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span>
+               <span class="n">windows</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> 
+               <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+               <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+               <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+
+    <span class="c1"># best models</span>
+    <span class="n">best_model_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># best models names</span>
+    <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># test r2 scores of the best models</span>
+    <span class="n">test_score_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># test rmse scores of the best models</span>
+    <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># train features of the best models</span>
+    <span class="n">input_features_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># best hyperparameters for each window</span>
+    <span class="n">best_params_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    
+    <span class="k">for</span> <span class="n">window</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
+        <span class="c1"># window 특성 추가</span>
+        <span class="n">df_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
+        <span class="c1"># 결측치 제거</span>
+        <span class="n">df_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># 입력 및 타깃 특성 지정</span>
+        <span class="n">features_to_be_removed</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features</span>
+        <span class="n">features_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_window</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">features_to_be_removed</span><span class="p">:</span>
+            <span class="n">features_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ft</span><span class="p">)</span>
+        
+        <span class="n">input_features</span> <span class="o">=</span> <span class="n">features_</span>
+        <span class="n">target_feature</span> <span class="o">=</span> <span class="s1">&#39;log_CHLA&#39;</span>
+
+        <span class="c1"># 입력 및 타깃 데이터셋 지정</span>
+        <span class="n">inputs</span> <span class="o">=</span> <span class="n">df_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">input_features</span><span class="p">]</span>
+        <span class="n">targets</span> <span class="o">=</span> <span class="n">df_window</span><span class="p">[</span><span class="n">target_feature</span><span class="p">]</span>
+
+        <span class="c1"># 훈련셋과 테스트셋 분리</span>
+        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+        <span class="c1"># 그리드 탐색 훈련 시작</span>
+        <span class="n">added_feature</span> <span class="o">=</span> <span class="n">window</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;===</span><span class="si">{</span><span class="n">added_feature</span><span class="si">}</span><span class="s2">day(s) temperature and discharge added===&quot;</span><span class="p">)</span>
+
+        <span class="n">model_grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> 
+                                  <span class="n">scoring</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;r2&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="s1">&#39;r2&#39;</span><span class="p">)</span>
+        <span class="n">model_grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+        <span class="c1"># 최적 모델 저장</span>
+        <span class="n">estimator</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_estimator_</span>
+
+        <span class="n">best_model</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">added_feature</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;days&quot;</span><span class="o">+</span><span class="s2">&quot;.pkl&quot;</span>
+        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
+
+        <span class="c1"># 저장된 모델 다시 불러오기</span>
+        <span class="n">estimator</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
+
+        <span class="n">best_model_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span>
+        <span class="n">best_model_name_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">best_model</span>
+        <span class="n">test_score_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+        <span class="n">test_score_rmse_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
+        <span class="n">input_features_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">input_features</span>
+        <span class="n">best_params_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_params_</span>
+
+    <span class="n">dicts</span> <span class="o">=</span> <span class="p">(</span><span class="n">best_model_dict</span><span class="p">,</span> 
+             <span class="n">best_model_name_dict</span><span class="p">,</span> 
+             <span class="n">test_score_dict</span><span class="p">,</span> 
+             <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
+             <span class="n">input_features_dict</span><span class="p">,</span> 
+             <span class="n">best_params_dict</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">dicts</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;DateTime&#39;&gt;
-</pre></div>
 </div>
-<img alt="_images/0c72dec8582875c4db6c4f3c57b28ae83be5fd06f899edc2847812688ff2b901.png" src="_images/0c72dec8582875c4db6c4f3c57b28ae83be5fd06f899edc2847812688ff2b901.png" />
-</div>
-</div>
+<p><strong><code class="docutils literal notranslate"><span class="pre">gridsearch_duet()</span></code> 함수</strong></p>
 <ul class="simple">
-<li><p>주별 변화</p></li>
+<li><p>그리드 탐색 훈련을 진행</p></li>
+<li><p>인자: 모델, 하이퍼파라미터 조합, 특성, 윈도우 크기, 년도</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">df1</span></code>에 <code class="docutils literal notranslate"><span class="pre">df2</span></code>의 특성에 대해 윈도우를 적용한 결과를 추가해서 훈련셋으로 지정.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">df1</span></code>: 죽산보 데이터</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">df2</span></code>: 승촌보 데이터</p></li>
+</ul>
+</li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;jsb_inflow&#39;</span><span class="p">,</span> <span class="s1">&#39;scb+jsc&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gridsearch_duet</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> 
+                    <span class="n">features1</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> 
+                    <span class="n">features2</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Water_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;Discharge&#39;</span><span class="p">],</span> 
+                    <span class="n">windows</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> 
+                    <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+                    <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    df1: 죽산보 데이터</span>
+<span class="sd">    df2: 승촌보 데이터</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># best models</span>
+    <span class="n">best_model_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># best models names</span>
+    <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># test r2 scores of the best models</span>
+    <span class="n">test_score_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># test rmse scores of the best models</span>
+    <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># train features of the best models</span>
+    <span class="n">input_features_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="c1"># best hyperparameters for each window</span>
+    <span class="n">best_params_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    
+    <span class="k">for</span> <span class="n">window</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
+        <span class="c1"># window 특성 추가</span>
+        <span class="n">df1_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> 
+                                       <span class="n">features</span><span class="o">=</span><span class="n">features1</span><span class="p">,</span>
+                                       <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span>
+                                       <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
+        <span class="n">df2_window</span> <span class="o">=</span> <span class="n">feature_windowing</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> 
+                                       <span class="n">features</span><span class="o">=</span><span class="n">features2</span><span class="p">,</span> 
+                                       <span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">,</span> 
+                                       <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;_scb&#39;</span><span class="p">,</span> 
+                                       <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
+        
+        <span class="c1"># 결측치 제거</span>
+        <span class="n">df1_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">df2_window</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="c1"># 공통 인덱스 샘플만 활용</span>
+        <span class="n">df1_index</span> <span class="o">=</span> <span class="n">df1_window</span><span class="o">.</span><span class="n">index</span>
+        <span class="n">df2_index</span> <span class="o">=</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">index</span>
+        <span class="n">common_index</span> <span class="o">=</span> <span class="n">df1_index</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">df2_index</span><span class="p">)</span>
+        
+        <span class="n">df1_window</span> <span class="o">=</span> <span class="n">df1_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
+        <span class="n">df2_window</span> <span class="o">=</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">common_index</span><span class="p">]</span>
+        
+        <span class="k">assert</span> <span class="p">(</span><span class="n">df1_window</span><span class="o">.</span><span class="n">index</span> <span class="o">==</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+                
+        <span class="c1"># 입력 및 타깃 특성 지정</span>
+        <span class="n">features_to_be_removed</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">features1</span>
+        <span class="n">features1_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df1_window</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="n">features_to_be_removed</span><span class="p">:</span>
+            <span class="n">features1_</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ft</span><span class="p">)</span>
+            
+        <span class="n">features2_</span> <span class="o">=</span> <span class="p">[</span><span class="n">ft</span> <span class="k">for</span> <span class="n">ft</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">df2_window</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="k">if</span> <span class="n">ft</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;_scb&#39;</span><span class="p">)]</span>
+        
+        <span class="n">target_feature</span> <span class="o">=</span> <span class="s1">&#39;log_CHLA&#39;</span>
+                
+        <span class="n">inputs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df1_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">features1_</span><span class="p">],</span> <span class="n">df2_window</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">features2_</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">targets</span> <span class="o">=</span> <span class="n">df1_window</span><span class="p">[</span><span class="n">target_feature</span><span class="p">]</span>
+
+        <span class="c1"># 훈련셋과 테스트셋 분리</span>
+        <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+        <span class="c1"># 그리드 탐색 훈련 시작</span>
+        <span class="n">added_feature</span> <span class="o">=</span> <span class="n">window</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;===</span><span class="si">{</span><span class="n">added_feature</span><span class="si">}</span><span class="s2">day(s) temperature and discharge added===&quot;</span><span class="p">)</span>
+
+        <span class="n">model_grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> 
+                                  <span class="n">scoring</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;r2&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">],</span> <span class="n">refit</span><span class="o">=</span><span class="s1">&#39;r2&#39;</span><span class="p">)</span>
+        <span class="n">model_grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+        <span class="c1"># 최적 모델 저장</span>
+        <span class="n">estimator</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_estimator_</span>
+
+        <span class="n">best_model</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">added_feature</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;days&quot;</span><span class="o">+</span><span class="s2">&quot;.pkl&quot;</span>
+        <span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
+
+        <span class="c1"># 저장된 모델 다시 불러오기</span>
+        <span class="n">estimator</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
+
+        <span class="n">best_model_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span>
+        <span class="n">best_model_name_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">best_model</span>
+        <span class="n">test_score_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+        <span class="n">test_score_rmse_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)))</span>
+        <span class="n">input_features_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">features1_</span> <span class="o">+</span> <span class="n">features2_</span>
+        <span class="n">best_params_dict</span><span class="p">[</span><span class="n">added_feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_grid</span><span class="o">.</span><span class="n">best_params_</span>
+        
+    <span class="n">dicts</span> <span class="o">=</span> <span class="p">(</span><span class="n">best_model_dict</span><span class="p">,</span> 
+             <span class="n">best_model_name_dict</span><span class="p">,</span> 
+             <span class="n">test_score_dict</span><span class="p">,</span> 
+             <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
+             <span class="n">input_features_dict</span><span class="p">,</span> 
+             <span class="n">best_params_dict</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">dicts</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;DateTime&#39;&gt;
-</pre></div>
 </div>
-<img alt="_images/ffac796b1d27b8fb9948da3552466f0651560dc4847b835ec29734de6be5d0d0.png" src="_images/ffac796b1d27b8fb9948da3552466f0651560dc4847b835ec29734de6be5d0d0.png" />
-</div>
-</div>
+</section>
+<section id="id19">
+<h3><span class="section-number">10.8.3. </span>특성 중요도<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>월별 변화</p></li>
+<li><p>훈련된 최고 성능의 모델 활용</p></li>
+<li><p>특성 중요도를 막대그래프로 그리기</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flow_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="p">[</span><span class="s1">&#39;jsb_inflow&#39;</span><span class="p">,</span> <span class="s1">&#39;scb+jsc&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
+                               <span class="n">input_features_dict</span><span class="p">,</span> 
+                               <span class="n">best_models_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                               <span class="n">max_features</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">models_trained</span> <span class="o">=</span> <span class="n">best_model_name_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="n">num_of_models</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">models_trained</span><span class="p">)</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">num_of_models</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">num_of_models</span><span class="o">*</span><span class="mi">4</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">model_name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">models_trained</span><span class="p">):</span>
+        <span class="n">ax</span> <span class="o">=</span> <span class="n">axs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+        <span class="c1"># 저장된 모델 다시 불러오기</span>
+        <span class="n">best_model</span> <span class="o">=</span> <span class="n">model_name</span><span class="o">+</span><span class="s2">&quot;days.pkl&quot;</span>
+        <span class="n">estimator_</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">best_models_path</span> <span class="o">/</span> <span class="n">best_model</span><span class="p">)</span>
+        <span class="c1"># 모델이 사용한 특성들 확인</span>
+        <span class="n">input_features_</span> <span class="o">=</span> <span class="n">input_features_dict</span><span class="p">[</span><span class="n">model_name</span><span class="p">]</span>
+        <span class="c1"># 특성 중요도 확인</span>
+        <span class="n">feature_series</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">estimator_</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="n">input_features_</span><span class="p">)</span>
+        <span class="n">feature_series</span> <span class="o">=</span> <span class="n">feature_series</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Features&quot;</span>
+        <span class="n">feature_series</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Feature Importances&quot;</span>
+        
+        <span class="c1"># 특성 중요도 막대그래프</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">max_features</span><span class="p">:</span>
+            <span class="n">max_features</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">feature_series</span><span class="p">)</span>
+        <span class="c1"># colors = {h:&#39;gray&#39; for h in feature_series.index[:max_features]}</span>
+        <span class="c1"># colors[&#39;DO&#39;] = &#39;red&#39;</span>
+
+        <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> 
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">feature_series</span><span class="p">[:</span><span class="n">max_features</span><span class="p">],</span> 
+                    <span class="n">y</span> <span class="o">=</span> <span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="n">max_features</span><span class="p">],</span> 
+                    <span class="c1"># palette=colors, </span>
+                    <span class="n">hue</span><span class="o">=</span><span class="n">feature_series</span><span class="o">.</span><span class="n">index</span><span class="p">[:</span><span class="n">max_features</span><span class="p">])</span>
+        <span class="c1"># sns.barplot(ax=ax, </span>
+        <span class="c1">#             x = feature_series[:max_features], </span>
+        <span class="c1">#             y = feature_series.index[:max_features])</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">hspace</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="do-ph">
+<h3><span class="section-number">10.8.4. </span>전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제<a class="headerlink" href="#do-ph" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code>는 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>의 영향을 받는 인자임</p></li>
+<li><p>대기온도, 구름, 풍속 등은 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 특별한 인과관계가 없는 인자임.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">to_drop</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DO&#39;</span><span class="p">,</span> <span class="s1">&#39;pH&#39;</span><span class="p">,</span> <span class="s1">&#39;Air_TA&#39;</span><span class="p">,</span> <span class="s1">&#39;RN&#39;</span><span class="p">,</span> <span class="s1">&#39;WS&#39;</span><span class="p">,</span> <span class="s1">&#39;SS&#39;</span><span class="p">,</span> <span class="s1">&#39;SI&#39;</span><span class="p">,</span> <span class="s1">&#39;CA_TOT&#39;</span><span class="p">,</span> <span class="s1">&#39;CA_MID&#39;</span><span class="p">,</span> <span class="s1">&#39;Down_WL&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1_jsb</span> <span class="o">=</span> <span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">to_drop</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df2_scb</span> <span class="o">=</span> <span class="n">jsb_df_log</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">to_drop</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id20">
+<h3><span class="section-number">10.8.5. </span>죽산보 데이터셋에 대해서만 훈련<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<p><strong>학습된 모델 저장</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_models_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;best_models_jsbOnly_and_all_features_wo_original&quot;</span>
+<span class="n">best_models_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>입력값</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">window_features</span> <span class="o">=</span> <span class="n">df1_jsb</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">windows</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>모델 훈련</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dicts</span> <span class="o">=</span> <span class="n">gridsearch</span><span class="p">(</span><span class="n">df1_jsb</span><span class="p">,</span> <span class="n">gb_reg</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> 
+                   <span class="n">features</span><span class="o">=</span><span class="n">window_features</span><span class="p">,</span> 
+                   <span class="n">windows</span><span class="o">=</span><span class="n">windows</span><span class="p">,</span> 
+                   <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span> 
+                   <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
+                   <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">best_model_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;DateTime&#39;&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===1day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.017) r2: (test=0.973) total time= 3.9min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.017) r2: (test=0.973) total time= 3.8min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.018) r2: (test=0.972) total time= 4.0min
+===2day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 4.1min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 4.1min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.016) r2: (test=0.975) total time= 4.1min
+===3day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 4.2min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 4.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.016) r2: (test=0.975) total time= 4.3min
+===4day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 4.3min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 4.3min
+===5day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.4min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 4.4min
+===6day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.4min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.4min
+===7day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.4min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 4.4min
+===8day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.4min
+===9day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 4.5min
+===10day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
+===11day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
+===12day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
+===13day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.980) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.6min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.6min
+===14day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 4.5min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 4.5min
 </pre></div>
 </div>
-<img alt="_images/55e7727bcfb776e19308b71d8bc7831c94e7efad554f96775bd0eacfa7958cb4.png" src="_images/55e7727bcfb776e19308b71d8bc7831c94e7efad554f96775bd0eacfa7958cb4.png" />
+</div>
+</div>
+<p><strong>훈련된 최고 모델의 정보 저장</strong></p>
+<ul class="simple">
+<li><p>저장된 모델 불러올 때는 실행 불필요</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="k">def</span> <span class="nf">save_best</span><span class="p">(</span><span class="n">path_to_save</span><span class="p">,</span> 
+              <span class="n">best_model_name_dict</span><span class="p">,</span> 
+              <span class="n">test_score_dict</span><span class="p">,</span> 
+              <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
+              <span class="n">best_params_dict</span><span class="p">,</span> 
+              <span class="n">input_features_dict</span><span class="p">):</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_model_name.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">test_score_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score_rmse.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">test_score_rmse_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_params.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">best_params_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;input_features.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">input_features_dict</span><span class="p">,</span> <span class="n">json_file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">save_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">,</span> 
+          <span class="n">best_model_name_dict</span><span class="p">,</span>
+          <span class="n">test_score_dict</span><span class="p">,</span> 
+          <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
+          <span class="n">best_params_dict</span><span class="p">,</span> 
+          <span class="n">input_features_dict</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>최고 성능 모델 정보 불러오기</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="k">def</span> <span class="nf">load_best</span><span class="p">(</span><span class="n">path_to_save</span><span class="p">):</span>
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_model_name.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;test_score_rmse.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;best_params.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+    <span class="n">file_name</span> <span class="o">=</span> <span class="s1">&#39;input_features.json&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_to_save</span> <span class="o">/</span> <span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+        <span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">best_model_name_dict</span><span class="p">,</span> <span class="n">test_score_dict</span><span class="p">,</span> <span class="n">test_score_rmse_dict</span><span class="p">,</span> <span class="n">best_params_dict</span><span class="p">,</span> <span class="n">input_features_dict</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+
+<span class="n">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
+                           <span class="n">input_features_dict</span><span class="p">,</span>
+                           <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
+                           <span class="n">max_features</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                           <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 2000x10000 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/367d2fa402c4fc078812688646c96d40778499857eefdc1fa597c1d5276afffb.png" src="_images/367d2fa402c4fc078812688646c96d40778499857eefdc1fa597c1d5276afffb.png" />
+</div>
+</div>
+</section>
+<section id="id21">
+<h3><span class="section-number">10.8.6. </span>죽산보에 승촌보 일부 특성 추가 후 훈련<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<p><strong>학습된 모델 저장</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_models_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;best_models_with_scb_and_all_features_wo_original&quot;</span>
+<span class="n">best_models_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>입력값</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">window_features1</span> <span class="o">=</span> <span class="n">df1_jsb</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;log_CHLA&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">window_features2</span> <span class="o">=</span> <span class="n">df2_scb</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">windows</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>모델 훈련</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dicts</span> <span class="o">=</span> <span class="n">gridsearch_duet</span><span class="p">(</span><span class="n">df1_jsb</span><span class="p">,</span> <span class="n">df2_scb</span><span class="p">,</span> <span class="n">gb_reg</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> 
+                        <span class="n">features1</span><span class="o">=</span><span class="n">window_features1</span><span class="p">,</span> 
+                        <span class="n">features2</span><span class="o">=</span><span class="n">window_features2</span><span class="p">,</span> 
+                        <span class="n">windows</span><span class="o">=</span><span class="n">windows</span><span class="p">,</span> 
+                        <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
+                        <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
+                        <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">best_model_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">dicts</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>===1day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.016) r2: (test=0.974) total time= 8.1min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.017) r2: (test=0.973) total time= 8.1min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.018) r2: (test=0.972) total time= 8.2min
+===2day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 8.7min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.016) r2: (test=0.975) total time= 8.7min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.017) r2: (test=0.974) total time= 8.7min
+===3day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 8.9min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 9.0min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.016) r2: (test=0.975) total time= 8.9min
+===4day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 9.0min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 9.0min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.976) total time= 9.0min
+===5day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.1min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 9.1min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 9.1min
+===6day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.2min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.2min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 9.2min
+===7day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.015) r2: (test=0.977) total time= 9.3min
+===8day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.2min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.977) total time= 9.3min
+===9day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.979) total time= 9.3min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.5min
+===10day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.3min
+===11day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.4min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.3min
+===12day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.3min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.3min
+===13day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.4min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.4min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.4min
+===14day(s) temperature and discharge added===
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV 1/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.5min
+[CV 2/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.013) r2: (test=0.979) total time= 9.9min
+[CV 3/3] END learning_rate=0.05, max_depth=10, n_estimators=1200, subsample=0.6; neg_mean_squared_error: (test=-0.014) r2: (test=0.978) total time= 9.5min
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>훈련된 최고 모델의 정보 저장</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">save_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">,</span> 
+          <span class="n">best_model_name_dict</span><span class="p">,</span>
+          <span class="n">test_score_dict</span><span class="p">,</span> 
+          <span class="n">test_score_rmse_dict</span><span class="p">,</span> 
+          <span class="n">best_params_dict</span><span class="p">,</span> 
+          <span class="n">input_features_dict</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>최고 성능 모델 정보 불러오기</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_model_name_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">test_score_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">test_score_rmse_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">best_params_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">input_features_dict</span> <span class="o">=</span> <span class="n">load_best</span><span class="p">(</span><span class="n">best_models_path</span><span class="p">)[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+
+<span class="n">feature_importance_barplot</span><span class="p">(</span><span class="n">best_model_name_dict</span><span class="p">,</span> 
+                           <span class="n">input_features_dict</span><span class="p">,</span>
+                           <span class="n">best_models_path</span><span class="o">=</span><span class="n">best_models_path</span><span class="p">,</span>
+                           <span class="n">max_features</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 2000x10000 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/3c06831b0e23136f3ef159a3fe7a695f6d47610e0f14f113e3bd48a3edc7fb79.png" src="_images/3c06831b0e23136f3ef159a3fe7a695f6d47610e0f14f113e3bd48a3edc7fb79.png" />
 </div>
 </div>
 </section>
@@ -6889,13 +6772,22 @@ Name: jsb_chla, dtype: float64
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="jsb_scb_compared_240925a.html"
+       href="jsb_scb_compared_240919.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="jsb_scb_jsc_added_241010.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -6913,28 +6805,34 @@ Name: jsb_chla, dtype: float64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">11.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">11.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">11.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">11.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">11.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">10.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">11.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">11.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">11.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">11.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">11.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">11.6. 지석천 데이터 불러오기</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">11.7. 승촌보, 지석천, 죽산보 CHLA, 방류량(유량) 비교</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a">11.7.1. Chl-a 분포 비교</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">11.7.2. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chl-a-chl-a">11.7.3. 죽산보 Chl-a와 승촌보 Chl-a와의 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">11.7.4. 방류량, 유량, 유입량 분포</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.6. 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">10.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.7. 방류량과 수온의 평균값 활용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.8. 모델 훈련</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">10.8.1. 전처리: 로그 변환</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">10.8.2. 그레이디언트 부스팅 모델</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">10.8.3. 특성 중요도</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#do-ph">10.8.4. 전처리: <code class="docutils literal notranslate"><span class="pre">DO</span></code>와 <code class="docutils literal notranslate"><span class="pre">pH</span></code> 등 기타 특성 삭제</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">10.8.5. 죽산보 데이터셋에 대해서만 훈련</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">10.8.6. 죽산보에 승촌보 일부 특성 추가 후 훈련</a></li>
 </ul>
 </li>
 </ul>

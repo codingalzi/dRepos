@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>9. 죽산보-승촌보 데이터 비교: 상관관계 &#8212; 데이터 리포지토리</title>
+    <title>8. 죽산보-승촌보 데이터 비교: 상관관계 &#8212; 데이터 리포지토리</title>
   
   
   
@@ -32,9 +32,9 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css?v=ca93fcec" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -61,8 +61,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'jsb_scb_compared_240908';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240919.html" />
-    <link rel="prev" title="8. 죽산보-승촌보 데이터 비교: 모델 훈련 2" href="jsb_scb_compared_240904a.html" />
+    <link rel="next" title="9. 죽산보 데이터 분석: 승촌보 데이터 추가 활용" href="jsb_scb_compared_240919.html" />
+    <link rel="prev" title="7. 죽산보-승촌보 데이터 비교: 모델 훈련 2" href="jsb_scb_compared_240904a.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,12 +180,11 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="jsb_basics_240830.html">5. 죽산보 데이터 분석</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240903.html">6. 죽산보-승촌보 데이터 비교</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240904.html">7. 죽산보-승촌보 데이터 비교: 모델 훈련 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240904a.html">8. 죽산보-승촌보 데이터 비교: 모델 훈련 2</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. 죽산보-승촌보 데이터 비교: 상관관계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240919.html">10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925.html">11. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jsb_scb_jsc_added_241010.html">12. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240904a.html">7. 죽산보-승촌보 데이터 비교: 모델 훈련 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. 죽산보-승촌보 데이터 비교: 상관관계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240919.html">9. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_compared_240925a.html">10. 죽산보 데이터 분석: 승촌보 데이터 추가 활용</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jsb_scb_jsc_added_241010.html">11. 죽산보 데이터 분석: 승촌보와 지석천 데이터 활용</a></li>
 </ul>
 
     </div>
@@ -412,31 +411,31 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">9.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">9.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">9.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">9.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">8.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">8.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">8.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">8.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">8.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">9.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">9.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">9.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">9.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">9.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">8.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">8.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">8.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">8.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">8.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">9.6. 상관관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">9.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">8.6. 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">8.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">9.7. 죽산보 특성과 승촌보 특성 사이의 시차별 상관관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#day">9.7.1. 데이터 변환: 일(day)별 평균값 데이터 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">9.7.2. 승촌보 데이터에 시프트 적용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">9.7.3. 특성별 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">9.7.4. 죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">8.7. 죽산보 특성과 승촌보 특성 사이의 시차별 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#day">8.7.1. 데이터 변환: 일(day)별 평균값 데이터 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">8.7.2. 승촌보 데이터에 시프트 적용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">8.7.3. 특성별 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">8.7.4. 죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계</a></li>
 </ul>
 </li>
 </ul>
@@ -451,15 +450,15 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">9. </span>죽산보-승촌보 데이터 비교: 상관관계<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">8. </span>죽산보-승촌보 데이터 비교: 상관관계<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2><span class="section-number">9.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.1. </span>주요 내용<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보와 승촌보 데이터의 기초 통계 비교</p></li>
 </ul>
 </section>
 <section id="id3">
-<h2><span class="section-number">9.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>데이터 정보<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보/승촌보 수질 데이터</p>
 <ul>
@@ -476,7 +475,7 @@ document.write(`
 </ul>
 </section>
 <section id="id4">
-<h2><span class="section-number">9.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>필수 모듈 임포트<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -529,7 +528,7 @@ document.write(`
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">9.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.4. </span>죽산보 데이터 불러오기<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p><strong>디렉토리 관리 객체</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -560,7 +559,7 @@ document.write(`
 </div>
 </div>
 <section id="id6">
-<h3><span class="section-number">9.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.1. </span>수질/기상 데이터 불러오기<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p><strong>데이터 연도</strong></p>
 <ul class="simple">
 <li><p>2012년부터 2023년도 사이의 데이터</p></li>
@@ -2298,7 +2297,7 @@ memory usage: 13.4+ MB
 </div>
 </section>
 <section id="id7">
-<h3><span class="section-number">9.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.2. </span>수량 데이터 불러오기<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>죽산보/승촌보 수량 데이터는 <code class="docutils literal notranslate"><span class="pre">'yeongsanriver_weir_dflow'</span></code> 디렉토리에 있음.</p></li>
 <li><p>연도별 데이터는 시트(sheet)로 구분됨.</p></li>
@@ -3825,7 +3824,7 @@ memory usage: 26.9 MB
 </div>
 </section>
 <section id="id8">
-<h3><span class="section-number">9.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.3. </span>수량 데이터 통합<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p><strong>10분 단위를 1시간 단위로 변경</strong></p>
 <p>먼저 시간별 평균값을 활용하여 1시간 단위 데이터로 변환한다.</p>
 <div class="cell docutils container">
@@ -4256,9 +4255,9 @@ memory usage: 16.4+ MB
 </section>
 </section>
 <section id="id9">
-<h2><span class="section-number">9.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.5. </span>데이터 전처리<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
 <section id="id10">
-<h3><span class="section-number">9.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.5.1. </span>결측치 처리<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>일조, 일사, 강수량 세 특성에 다량의 결측치가 포함된다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -4642,7 +4641,7 @@ memory usage: 16.4+ MB
 </div>
 </section>
 <section id="id11">
-<h3><span class="section-number">9.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.5.2. </span>이상치 확인<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>수치형 특성들의 분포를 살펴보았을 때 이상치 등은 없어 보인다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5127,7 +5126,7 @@ memory usage: 16.4+ MB
 </div>
 </section>
 <section id="id12">
-<h3><span class="section-number">9.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.5.3. </span>특성 영문명 지정<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>먼저 지점, 지점명 정보는 중요하지 않기에 해당 특성들을 삭제한다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5378,7 +5377,7 @@ memory usage: 14.9 MB
 </div>
 </section>
 <section id="id13">
-<h3><span class="section-number">9.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.5.4. </span>결측치 보간법<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>결측치는 양방향 12시간 선형 보간법으로 대체. 결측 구간별 최대 24시간의 결측치 대체.</p></li>
 <li><p>예) 결측치가 36개인 구간이 있다면 처음-12개와 25-36개만 결측치 대체.</p></li>
@@ -5565,9 +5564,9 @@ memory usage: 10.2 MB
 </section>
 </section>
 <section id="id14">
-<h2><span class="section-number">9.6. </span>상관관계<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.6. </span>상관관계<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
 <section id="chla">
-<h3><span class="section-number">9.6.1. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#chla" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.6.1. </span><code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계<a class="headerlink" href="#chla" title="Link to this heading">#</a></h3>
 <p><strong>경우: 죽산보</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5599,14 +5598,14 @@ memory usage: 10.2 MB
 </section>
 </section>
 <section id="id15">
-<h2><span class="section-number">9.7. </span>죽산보 특성과 승촌보 특성 사이의 시차별 상관관계<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.7. </span>죽산보 특성과 승촌보 특성 사이의 시차별 상관관계<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>죽산보가 승촌보보다 영산간 하류에 위치.</p></li>
 <li><p>거리: 약 20km</p></li>
 <li><p>중간에 나주시를 가로질러 흐름</p></li>
 </ul>
 <section id="day">
-<h3><span class="section-number">9.7.1. </span>데이터 변환: 일(day)별 평균값 데이터 활용<a class="headerlink" href="#day" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.7.1. </span>데이터 변환: 일(day)별 평균값 데이터 활용<a class="headerlink" href="#day" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>죽산보 데이터 변환</p></li>
 </ul>
@@ -5698,7 +5697,7 @@ memory usage: 453.1 KB
 </div>
 </section>
 <section id="id16">
-<h3><span class="section-number">9.7.2. </span>승촌보 데이터에 시프트 적용<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.7.2. </span>승촌보 데이터에 시프트 적용<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <p><strong>죽산보 데이터 기준으로 승촌보 데이터에 시프트 적용</strong></p>
 <ul class="simple">
 <li><p>지정된 크기의 시프트를 승촌보 데이터에 대해서만 적용</p></li>
@@ -5745,7 +5744,7 @@ memory usage: 453.1 KB
 </div>
 </section>
 <section id="id17">
-<h3><span class="section-number">9.7.3. </span>특성별 상관관계<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.7.3. </span>특성별 상관관계<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <p>다음 특성들을 대상으로 죽산보와 시프트된 승촌보 데이터 사이의 상관관계를 알아본다.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5813,7 +5812,7 @@ memory usage: 453.1 KB
 </div>
 </section>
 <section id="id18">
-<h3><span class="section-number">9.7.4. </span>죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.7.4. </span>죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <p><strong><code class="docutils literal notranslate"><span class="pre">join_jsb_scb_shifted()</span></code> 함수</strong></p>
 <ul class="simple">
 <li><p>지정된 죽산보 특성들과 시프트된 승촌보 특성들로 구성된 데이터프레임 생성</p></li>
@@ -5917,7 +5916,7 @@ memory usage: 453.1 KB
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>죽산보-승촌보 데이터 비교: 모델 훈련 2</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>죽산보-승촌보 데이터 비교: 모델 훈련 2</p>
       </div>
     </a>
     <a class="right-next"
@@ -5925,7 +5924,7 @@ memory usage: 453.1 KB
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>죽산보 데이터 분석: 승촌보 데이터 추가 활용</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -5945,31 +5944,31 @@ memory usage: 453.1 KB
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">9.1. 주요 내용</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9.2. 데이터 정보</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.3. 필수 모듈 임포트</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">9.4.1. 수질/기상 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">9.4.2. 수량 데이터 불러오기</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">9.4.3. 수량 데이터 통합</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.1. 주요 내용</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">8.2. 데이터 정보</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">8.3. 필수 모듈 임포트</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.4. 죽산보 데이터 불러오기</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">8.4.1. 수질/기상 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">8.4.2. 수량 데이터 불러오기</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">8.4.3. 수량 데이터 통합</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">9.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">9.5.1. 결측치 처리</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">9.5.2. 이상치 확인</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">9.5.3. 특성 영문명 지정</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">9.5.4. 결측치 보간법</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">8.5. 데이터 전처리</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">8.5.1. 결측치 처리</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">8.5.2. 이상치 확인</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">8.5.3. 특성 영문명 지정</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">8.5.4. 결측치 보간법</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">9.6. 상관관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">9.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">8.6. 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chla">8.6.1. <code class="docutils literal notranslate"><span class="pre">CHLA</span></code>와 기타 특성들 사이의 상관관계</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">9.7. 죽산보 특성과 승촌보 특성 사이의 시차별 상관관계</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#day">9.7.1. 데이터 변환: 일(day)별 평균값 데이터 활용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">9.7.2. 승촌보 데이터에 시프트 적용</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">9.7.3. 특성별 상관관계</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">9.7.4. 죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">8.7. 죽산보 특성과 승촌보 특성 사이의 시차별 상관관계</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#day">8.7.1. 데이터 변환: 일(day)별 평균값 데이터 활용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">8.7.2. 승촌보 데이터에 시프트 적용</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">8.7.3. 특성별 상관관계</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">8.7.4. 죽산보의 <code class="docutils literal notranslate"><span class="pre">CHLA</span></code> 기준 시프트된 승촌보 데이터 특성과의 상관관계</a></li>
 </ul>
 </li>
 </ul>
